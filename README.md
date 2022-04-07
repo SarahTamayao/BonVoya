@@ -35,6 +35,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - User will be able to create an itinerary
     - User will be able to add attractions and POI (restaurants, theatres, etc.)
     - User will be able to assign dates and times to visit these attractions
+- User can access a help bar item that helps them navigate through the app
 
 **Optional Nice-to-have Stories**
 
