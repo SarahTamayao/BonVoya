@@ -39,6 +39,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 **Optional Nice-to-have Stories**
 
 - Dashboard will include a “spot of the day” for any of the locations they’ve specified
+- User can log their travel items & packed luggage
 
 ### 2. Screen Archetypes
 
