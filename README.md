@@ -71,9 +71,5 @@ This is an iOS application developed for iPhone that provides popular spots, act
     - [Attractions]
 
 ## Wireframes
-
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://i.imgur.com/WhhQ1lP.jpeg" width=600>
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/nfuTWXA"  ><a href="//imgur.com/a/nfuTWXA">WireFrame BonVoya</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
