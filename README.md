@@ -48,9 +48,6 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - [Profile]
     - [list associated required story here]
     - ...
-- [Section]
-    - [list associated required story here]
-    - ...
 - [Creation]
 - [Setting]
 
