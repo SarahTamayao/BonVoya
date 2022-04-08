@@ -72,4 +72,4 @@ This is an iOS application developed for iPhone that provides popular spots, act
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://imgur.com/a/nfuTWXA" width=600>
