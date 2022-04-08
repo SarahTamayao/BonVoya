@@ -44,13 +44,15 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - User will be able to see news for a specific location
 
 ### 2. Screen Archetypes
-
-- [list first screen here]
+- [Login/Register]
+- [Profile]
     - [list associated required story here]
     - ...
-- [list second screen here]
+- [Section]
     - [list associated required story here]
     - ...
+- [Creation]
+- [Setting]
 
 ### 3. Navigation
 
