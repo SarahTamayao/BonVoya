@@ -45,11 +45,13 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 ### 2. Screen Archetypes
 - [Login/Register]
+    - [Login/Register will launch initially.]
 - [Profile]
-    - [list associated required story here]
-    - ...
+    - [User can access their saved plans and access settings.]
 - [Creation]
-- [Setting]
+   - [User can create a new trip from (+) bar.]
+- [Settings]
+    - [User can specify accessibility needs within the Profile tab.]
 
 ### 3. Navigation
 
