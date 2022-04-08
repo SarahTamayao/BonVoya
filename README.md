@@ -31,7 +31,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - User can specify their desired location(s) of travel
 - A dashboard will display desired locations and current weather condition & temperature for each location
 - User will be able to access a general news page that includes news for all of their locations
-- When tapping on a location, user will be able to see a description, popular activities, and news for that location
+- When tapping on a location, user will be able to see a description, popular activities
 - User will be able to create an itinerary
     - User will be able to add attractions and POI (restaurants, theatres, etc.)
     - User will be able to assign dates and times to visit these attractions
@@ -41,6 +41,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 - Dashboard will include a “spot of the day” for any of the locations they’ve specified
 - User can log their travel items & packed luggage
+- User will be able to see news for a specific location
 
 ### 2. Screen Archetypes
 
