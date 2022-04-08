@@ -56,18 +56,19 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 **Tab Navigation** (Tab to Screen)
 
-- [fill out your first tab]
-- [fill out your second tab]
-- [fill out your third tab]
+- [Profile]
+- [(+)]
+- [Dashboard]
 
 **Flow Navigation** (Screen to Screen)
 
-- [list first screen here]
-    - [list screen navigation here]
-    - ...
-- [list second screen here]
-    - [list screen navigation here]
-    - ...
+- [Profile]
+    - [Settings]
+    - [Plan#]
+- [(+)]
+    - [Filter -> TicketFinder]
+- [Dashboard]
+    - [Attractions]
 
 ## Wireframes
 
