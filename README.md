@@ -72,5 +72,15 @@ This is an iOS application developed for iPhone that provides popular spots, act
     - [Attractions]
 
 ## Wireframes
-<img src="https://i.imgur.com/WhhQ1lP.jpeg" width=600>
+![Wireframe](https://user-images.githubusercontent.com/30938391/164106632-ca0ab42e-84e3-4cdc-a741-b10cb64044d4.jpeg)
 
+## Schema
+### Models
+#### Post
+
+insert model here
+
+### Networking
+#### List of network requests by screen
+
+insert networking here
