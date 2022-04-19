@@ -33,8 +33,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - User will be able to access a general news page that includes news for all of their locations
 - When tapping on a location, user will be able to see a description, popular activities
 - User will be able to create an itinerary
-    - User will be able to add attractions and POI (restaurants, theatres, etc.)
-    - User will be able to assign dates and times to visit these attractions
+- User will be able to visit their profile and see their itineraries
 - User can access a help bar item that helps them navigate through the app
 
 **Optional Nice-to-have Stories**
