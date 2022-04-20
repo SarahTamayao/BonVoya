@@ -91,27 +91,91 @@ This is an iOS application developed for iPhone that provides popular spots, act
    | createdAt     | DateTime | date when  is created (default field) |
 ### Networking
 #### List of network requests by screen
-   - Home Feed Screen
-      - (Read/GET) Query all posts where user is author
+   - Login/Register Screen
+      - (Register/CREATE) Create a new account
          ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
-            }
-         }
+           let query = PFQuery(classname: “Sign Up”)  
+           let user = PFUser()
+     	   user.username = usernameField.text
+     	   user.password = passwordField.text
+        
+      	  user.signUpInBackground { (success, error) in
+      	      if success {
+       	         self.performSegue(withIdentifier: "loginSegue", sender: nil)
+         	   } else {
+           	     print("Error: \(error?.localizedDescription)")
+           	 }
+    	    }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
+      - Login (GET) Login into an existing account
+        ```swift
+            let query = PFQuery(classname: “Login”)  
+          
+            LoginAPI.login( success: {
+          	    UserDefaults.standard.set(true, forKey: "userLoggedIn")
+          	    self.performSegue(withIdentifier: "loginToHome", sender: self)
+            
+       		 }, failure: { (Error) in
+     		   print("Could not login!")
+     		 } 
+        ```
+   - Dashboard Screen
+      - (Read/GET) Query to nearby attractions based on plan object 
+        ```swift
+            let query = PFQuery(className:"Dashboard")
+            query.includeKeys(["attractions", "relativeLocation", "map", “weather])
+            query.limit = 10
+            query.findObjectsInBackground{ (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData() //reload the tableView
+            }
+        ```
+       - (Update/PUT) current location set as default for finding attractions and allow selection between the locations of saved plans 
    - Profile Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Read/GET) Query to access saved plans
+        ```swift
+           let query = PFQuery(classname: “Get Trips”)          
+   	       numberofTrips = 5
+   	       let myParams = ["count": 5]
+        
+     	   APICallers.getDictionariesRequest(url: myUrl, parameters: myParams) { (Trips: [Dictionary]) in
+      	      self.TripArray.removeAll()
+     	       for plan in trips {
+     	           self.tripArray.append(plan)
+     	       }
+     	       self.tableView.reloadData()
+     	       self.myRefreshControl.endRefreshing()
+            
+  	      } failure: { (Error) in
+   	         print("Could not retrieve trips!")
+   	         print(Error)
+  	      }
+        ```
+      - (Update/PUT) Update user profile image and background
+   - Settings Screen
+      - (Update/PUT) Update any accessibility needs 
+   - Logout
+      ```swift
+         let query = PFQuery(classname: “Logout”)  
+         TwitterAPICaller.client?.logout()
+  	     self.dismiss(animated: true, completion: nil)
+     	 UserDefaults.standard.set(false, forKey: "userLoggedIn")
+      ```
+   - Create Screen
+      - (Create/POST) Create a new plan object
+      ```swift
+        let query = PFQuery(classname: “Create Trip”)  
+        @IBAction func Trip(_ sender: Any) {
+  	      if (!Empty) {
+            TwitterAPICaller.client?.createTrip(TripName String:TripTextView.text, TripDescription String: TripDescripionTextView.text, TripDestination String: TripDestinationTextView.text, TripDate String: TripDateTextView.text,  success: {
+          	      self.dismiss(animated: true, completion: nil)
+          	  }, failure: { (error) in
+
+            	    print("Error creating trip \(error)")
+            	    self.dismiss(animated: true, completion: nil)
+          	  })
+      	  } else {
+      	      self.dismiss(animated: true, completion: nil)
+      	  }
+      ```
