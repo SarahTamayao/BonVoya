@@ -86,13 +86,15 @@ This is an iOS application developed for iPhone that provides popular spots, act
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | author        | Pointer to User| itinerary author |
+   | image         | File     | image for corresponding location|
+   | image         | File     | image for user Profile Picture|
+   | itinerary     | Json Object  | Itinerary object containing itinerary name, start date and end date |
+   | itineraryPlace | Array  | User input for itinerary place item |
+   | itineraryName | Pointer to Itinerary   | User input for itinerary name |
+   | dateStart     | Pointer to Itinerary   | User input for itinerary start date |
+   | dateEnd       | Pointer to Itinerary  | User input for itinerary start date |
+   | createdAt     | DateTime | date when  is created (default field) |
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
