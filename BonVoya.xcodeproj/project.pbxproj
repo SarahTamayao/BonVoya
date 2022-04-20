@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92ED280FC0E8007822ED /* AppDelegate.swift */; };
+		A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92EF280FC0E8007822ED /* SceneDelegate.swift */; };
+		A19A92F2280FC0E8007822ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92F1280FC0E8007822ED /* ViewController.swift */; };
+		A19A92F5280FC0E8007822ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19A92F3280FC0E8007822ED /* Main.storyboard */; };
+		A19A92F7280FC0EB007822ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19A92F6280FC0EB007822ED /* Assets.xcassets */; };
+		A19A92FA280FC0EB007822ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */; };
+		A19A9305280FC0EB007822ED /* BonVoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9304280FC0EB007822ED /* BonVoyaTests.swift */; };
+		A19A930F280FC0EB007822ED /* BonVoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */; };
+		A19A9311280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A19A9301280FC0EB007822ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19A92E2280FC0E7007822ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19A92E9280FC0E7007822ED;
+			remoteInfo = BonVoya;
+		};
+		A19A930B280FC0EB007822ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19A92E2280FC0E7007822ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19A92E9280FC0E7007822ED;
+			remoteInfo = BonVoya;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A19A92EA280FC0E8007822ED /* BonVoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonVoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19A92ED280FC0E8007822ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A19A92EF280FC0E8007822ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A19A92F1280FC0E8007822ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A19A92F4280FC0E8007822ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A19A92F6280FC0EB007822ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A19A92F9280FC0EB007822ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A19A92FB280FC0EB007822ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19A9300280FC0EB007822ED /* BonVoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonVoyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19A9304280FC0EB007822ED /* BonVoyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaTests.swift; sourceTree = "<group>"; };
+		A19A930A280FC0EB007822ED /* BonVoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonVoyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITests.swift; sourceTree = "<group>"; };
+		A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A19A92E7280FC0E7007822ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A92FD280FC0EB007822ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A9307280FC0EB007822ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A19A92E1280FC0E7007822ED = {
+			isa = PBXGroup;
+			children = (
+				A19A92EC280FC0E8007822ED /* BonVoya */,
+				A19A9303280FC0EB007822ED /* BonVoyaTests */,
+				A19A930D280FC0EB007822ED /* BonVoyaUITests */,
+				A19A92EB280FC0E8007822ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A19A92EB280FC0E8007822ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A19A92EA280FC0E8007822ED /* BonVoya.app */,
+				A19A9300280FC0EB007822ED /* BonVoyaTests.xctest */,
+				A19A930A280FC0EB007822ED /* BonVoyaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A19A92EC280FC0E8007822ED /* BonVoya */ = {
+			isa = PBXGroup;
+			children = (
+				A19A92ED280FC0E8007822ED /* AppDelegate.swift */,
+				A19A92EF280FC0E8007822ED /* SceneDelegate.swift */,
+				A19A92F1280FC0E8007822ED /* ViewController.swift */,
+				A19A92F3280FC0E8007822ED /* Main.storyboard */,
+				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
+				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
+				A19A92FB280FC0EB007822ED /* Info.plist */,
+			);
+			path = BonVoya;
+			sourceTree = "<group>";
+		};
+		A19A9303280FC0EB007822ED /* BonVoyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A19A9304280FC0EB007822ED /* BonVoyaTests.swift */,
+			);
+			path = BonVoyaTests;
+			sourceTree = "<group>";
+		};
+		A19A930D280FC0EB007822ED /* BonVoyaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */,
+				A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */,
+			);
+			path = BonVoyaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A19A92E9280FC0E7007822ED /* BonVoya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19A9314280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoya" */;
+			buildPhases = (
+				A19A92E6280FC0E7007822ED /* Sources */,
+				A19A92E7280FC0E7007822ED /* Frameworks */,
+				A19A92E8280FC0E7007822ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonVoya;
+			productName = BonVoya;
+			productReference = A19A92EA280FC0E8007822ED /* BonVoya.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A19A92FF280FC0EB007822ED /* BonVoyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19A9317280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaTests" */;
+			buildPhases = (
+				A19A92FC280FC0EB007822ED /* Sources */,
+				A19A92FD280FC0EB007822ED /* Frameworks */,
+				A19A92FE280FC0EB007822ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19A9302280FC0EB007822ED /* PBXTargetDependency */,
+			);
+			name = BonVoyaTests;
+			productName = BonVoyaTests;
+			productReference = A19A9300280FC0EB007822ED /* BonVoyaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A19A9309280FC0EB007822ED /* BonVoyaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19A931A280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaUITests" */;
+			buildPhases = (
+				A19A9306280FC0EB007822ED /* Sources */,
+				A19A9307280FC0EB007822ED /* Frameworks */,
+				A19A9308280FC0EB007822ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A19A930C280FC0EB007822ED /* PBXTargetDependency */,
+			);
+			name = BonVoyaUITests;
+			productName = BonVoyaUITests;
+			productReference = A19A930A280FC0EB007822ED /* BonVoyaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A19A92E2280FC0E7007822ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A19A92E9280FC0E7007822ED = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					A19A92FF280FC0EB007822ED = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A19A92E9280FC0E7007822ED;
+					};
+					A19A9309280FC0EB007822ED = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A19A92E9280FC0E7007822ED;
+					};
+				};
+			};
+			buildConfigurationList = A19A92E5280FC0E7007822ED /* Build configuration list for PBXProject "BonVoya" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A19A92E1280FC0E7007822ED;
+			productRefGroup = A19A92EB280FC0E8007822ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A19A92E9280FC0E7007822ED /* BonVoya */,
+				A19A92FF280FC0EB007822ED /* BonVoyaTests */,
+				A19A9309280FC0EB007822ED /* BonVoyaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A19A92E8280FC0E7007822ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19A92FA280FC0EB007822ED /* LaunchScreen.storyboard in Resources */,
+				A19A92F7280FC0EB007822ED /* Assets.xcassets in Resources */,
+				A19A92F5280FC0E8007822ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A92FE280FC0EB007822ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A9308280FC0EB007822ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A19A92E6280FC0E7007822ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19A92F2280FC0E8007822ED /* ViewController.swift in Sources */,
+				A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */,
+				A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A92FC280FC0EB007822ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19A9305280FC0EB007822ED /* BonVoyaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A9306280FC0EB007822ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19A930F280FC0EB007822ED /* BonVoyaUITests.swift in Sources */,
+				A19A9311280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A19A9302280FC0EB007822ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19A92E9280FC0E7007822ED /* BonVoya */;
+			targetProxy = A19A9301280FC0EB007822ED /* PBXContainerItemProxy */;
+		};
+		A19A930C280FC0EB007822ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19A92E9280FC0E7007822ED /* BonVoya */;
+			targetProxy = A19A930B280FC0EB007822ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A19A92F3280FC0E8007822ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19A92F4280FC0E8007822ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A19A92F9280FC0EB007822ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A19A9312280FC0EB007822ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A19A9313280FC0EB007822ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A19A9315280FC0EB007822ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonVoya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A19A9316280FC0EB007822ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BonVoya/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A19A9318280FC0EB007822ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonVoya.app/BonVoya";
+			};
+			name = Debug;
+		};
+		A19A9319280FC0EB007822ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonVoya.app/BonVoya";
+			};
+			name = Release;
+		};
+		A19A931B280FC0EB007822ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoyaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BonVoya;
+			};
+			name = Debug;
+		};
+		A19A931C280FC0EB007822ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F54M32JY6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BonVoyagers.BonVoyaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BonVoya;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19A92E5280FC0E7007822ED /* Build configuration list for PBXProject "BonVoya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19A9312280FC0EB007822ED /* Debug */,
+				A19A9313280FC0EB007822ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19A9314280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19A9315280FC0EB007822ED /* Debug */,
+				A19A9316280FC0EB007822ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19A9317280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19A9318280FC0EB007822ED /* Debug */,
+				A19A9319280FC0EB007822ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19A931A280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A19A931B280FC0EB007822ED /* Debug */,
+				A19A931C280FC0EB007822ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A19A92E2280FC0E7007822ED /* Project object */;
+}
