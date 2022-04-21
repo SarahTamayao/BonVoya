@@ -1,0 +1,6 @@
+framework module Pods_BonVoyaTests {
+  umbrella header "Pods-BonVoyaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C216BB1CD3E34AA6B67BC1 /* Pods_BonVoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF3112037FE61E5784924E0 /* Pods_BonVoyaTests.framework */; };
+		3B7578FC470F8CBF4201BA3E /* Pods_BonVoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */; };
 		A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92ED280FC0E8007822ED /* AppDelegate.swift */; };
 		A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92EF280FC0E8007822ED /* SceneDelegate.swift */; };
 		A19A92F2280FC0E8007822ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92F1280FC0E8007822ED /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		A19A9305280FC0EB007822ED /* BonVoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9304280FC0EB007822ED /* BonVoyaTests.swift */; };
 		A19A930F280FC0EB007822ED /* BonVoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */; };
 		A19A9311280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */; };
+		C1B85BFF63416CCF08542CB1 /* Pods_BonVoya_BonVoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F7F48F1FA0152725AA0B08C /* Pods-BonVoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.release.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.release.xcconfig"; sourceTree = "<group>"; };
+		4901A6929CBA2F198F05A473 /* Pods-BonVoya-BonVoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AF3112037FE61E5784924E0 /* Pods_BonVoyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AFD5D7F05F802B936D4499 /* Pods-BonVoya-BonVoyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya-BonVoyaUITests.release.xcconfig"; path = "Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8DF13146E87E6BA33B251D7D /* Pods-BonVoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.release.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.release.xcconfig"; sourceTree = "<group>"; };
+		8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoya_BonVoyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19A92EA280FC0E8007822ED /* BonVoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonVoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19A92ED280FC0E8007822ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19A92EF280FC0E8007822ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +59,9 @@
 		A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITests.swift; sourceTree = "<group>"; };
 		A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1AC95522810DE3000E1270B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		B1E16885653B267EA1C2C98A /* Pods-BonVoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.debug.xcconfig"; sourceTree = "<group>"; };
+		C979C36C94CF2D3552A68F75 /* Pods-BonVoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7578FC470F8CBF4201BA3E /* Pods_BonVoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C216BB1CD3E34AA6B67BC1 /* Pods_BonVoyaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +85,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B85BFF63416CCF08542CB1 /* Pods_BonVoya_BonVoyaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54BE2952163EBBA28B19CC6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1E16885653B267EA1C2C98A /* Pods-BonVoya.debug.xcconfig */,
+				8DF13146E87E6BA33B251D7D /* Pods-BonVoya.release.xcconfig */,
+				4901A6929CBA2F198F05A473 /* Pods-BonVoya-BonVoyaUITests.debug.xcconfig */,
+				61AFD5D7F05F802B936D4499 /* Pods-BonVoya-BonVoyaUITests.release.xcconfig */,
+				C979C36C94CF2D3552A68F75 /* Pods-BonVoyaTests.debug.xcconfig */,
+				0F7F48F1FA0152725AA0B08C /* Pods-BonVoyaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		977B716F5D0F9C6AA983BFF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */,
+				8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */,
+				5AF3112037FE61E5784924E0 /* Pods_BonVoyaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A19A92E1280FC0E7007822ED = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +124,8 @@
 				A19A9303280FC0EB007822ED /* BonVoyaTests */,
 				A19A930D280FC0EB007822ED /* BonVoyaUITests */,
 				A19A92EB280FC0E8007822ED /* Products */,
+				54BE2952163EBBA28B19CC6B /* Pods */,
+				977B716F5D0F9C6AA983BFF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +146,8 @@
 				A19A92EF280FC0E8007822ED /* SceneDelegate.swift */,
 				A19A92F1280FC0E8007822ED /* ViewController.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
-				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
+				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
 			);
 			path = BonVoya;
@@ -136,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19A9314280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoya" */;
 			buildPhases = (
+				D4BCF73F5EC09070DD2C38C2 /* [CP] Check Pods Manifest.lock */,
 				A19A92E6280FC0E7007822ED /* Sources */,
 				A19A92E7280FC0E7007822ED /* Frameworks */,
 				A19A92E8280FC0E7007822ED /* Resources */,
+				AE284789B720F0AE8625C913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19A9317280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaTests" */;
 			buildPhases = (
+				5BD66738B1FF528D31722387 /* [CP] Check Pods Manifest.lock */,
 				A19A92FC280FC0EB007822ED /* Sources */,
 				A19A92FD280FC0EB007822ED /* Frameworks */,
 				A19A92FE280FC0EB007822ED /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19A931A280FC0EB007822ED /* Build configuration list for PBXNativeTarget "BonVoyaUITests" */;
 			buildPhases = (
+				6D937EF79480E33881CD00E7 /* [CP] Check Pods Manifest.lock */,
 				A19A9306280FC0EB007822ED /* Sources */,
 				A19A9307280FC0EB007822ED /* Frameworks */,
 				A19A9308280FC0EB007822ED /* Resources */,
+				3D36B5FDC502252C3470BC74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D36B5FDC502252C3470BC74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD66738B1FF528D31722387 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BonVoyaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D937EF79480E33881CD00E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BonVoya-BonVoyaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE284789B720F0AE8625C913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BonVoya/Pods-BonVoya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BonVoya/Pods-BonVoya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BonVoya/Pods-BonVoya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BCF73F5EC09070DD2C38C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BonVoya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A19A92E6280FC0E7007822ED /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		A19A9315280FC0EB007822ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E16885653B267EA1C2C98A /* Pods-BonVoya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +612,7 @@
 		};
 		A19A9316280FC0EB007822ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF13146E87E6BA33B251D7D /* Pods-BonVoya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		A19A9318280FC0EB007822ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C979C36C94CF2D3552A68F75 /* Pods-BonVoyaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +662,7 @@
 		};
 		A19A9319280FC0EB007822ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7F48F1FA0152725AA0B08C /* Pods-BonVoyaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +683,7 @@
 		};
 		A19A931B280FC0EB007822ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4901A6929CBA2F198F05A473 /* Pods-BonVoya-BonVoyaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +702,7 @@
 		};
 		A19A931C280FC0EB007822ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AFD5D7F05F802B936D4499 /* Pods-BonVoya-BonVoyaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
