@@ -49,6 +49,7 @@
 		A19A930A280FC0EB007822ED /* BonVoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonVoyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITests.swift; sourceTree = "<group>"; };
 		A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1AC95522810DE3000E1270B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		A19A92E1280FC0E7007822ED = {
 			isa = PBXGroup;
 			children = (
+				A1AC95522810DE3000E1270B /* README.md */,
 				A19A92EC280FC0E8007822ED /* BonVoya */,
 				A19A9303280FC0EB007822ED /* BonVoyaTests */,
 				A19A930D280FC0EB007822ED /* BonVoyaUITests */,

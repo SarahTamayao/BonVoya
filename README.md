@@ -27,7 +27,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 **Required Must-have Stories**
 
-- [ ] Application will connect and utilize a Parse backend
+- [ ] Application will connect to and utilize a Parse backend
 - [ ] User can register and login
 - [ ] User can specify their desired location(s) of travel
 - [ ] A dashboard will display desired locations and current weather condition & temperature for each location
