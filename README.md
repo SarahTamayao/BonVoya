@@ -27,20 +27,20 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 **Required Must-have Stories**
 
-- User can register and login
-- User can specify their desired location(s) of travel
-- A dashboard will display desired locations and current weather condition & temperature for each location
-- User will be able to access a general news page that includes news for all of their locations
-- When tapping on a location, user will be able to see a description, popular activities
-- User will be able to create an itinerary
-- User will be able to visit their profile and see their itineraries
-- User can access a help bar item that helps them navigate through the app
+- [ ] User can register and login
+- [ ] User can specify their desired location(s) of travel
+- [ ] A dashboard will display desired locations and current weather condition & temperature for each location
+- [ ] User will be able to access a general news page that includes news for all of their locations
+- [ ] When tapping on a location, user will be able to see a description, popular activities
+- [ ] User will be able to create an itinerary
+- [ ] User will be able to visit their profile and see their itineraries
+- [ ] User can access a help bar item that helps them navigate through the app
 
 **Optional Nice-to-have Stories**
 
-- Dashboard will include a “spot of the day” for any of the locations they’ve specified
-- User can log their travel items & packed luggage
-- User will be able to see news for a specific location
+- [ ] Dashboard will include a “spot of the day” for any of the locations they’ve specified
+- [ ] User can log their travel items & packed luggage
+- [ ] User will be able to see news for a specific location
 
 ### 2. Screen Archetypes
 - [Login/Register]
@@ -83,7 +83,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
    | author        | Pointer to User| itinerary author |
    | image         | File     | image for corresponding location|
    | image         | File     | image for user Profile Picture|
-   | itinerary     | Json Object  | Itinerary object containing itinerary name, start date and end date |
+   | itinerary     | JSON Object  | Itinerary object containing itinerary name, start date and end date |
    | itineraryPlace | Array  | User input for itinerary place item |
    | itineraryName | Pointer to Itinerary   | User input for itinerary name |
    | dateStart     | Pointer to Itinerary   | User input for itinerary start date |
