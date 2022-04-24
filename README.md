@@ -21,6 +21,11 @@ This is an iOS application developed for iPhone that provides popular spots, act
 - **Habit:** This app can be used as much or as little as the user likes, this depends on how much they travel and how often they’d like to retrieve personalized information about places that they find interesting.
 - **Scope:** This app will require relatively 5-10 hours of work per week, per group member, in order to complete on time. We could always scale down or scale up, depending on how the development process is coming along. A stripped-down version of this app would definitely still be very interesting to build.
 
+## Walkthrough GIFs
+### Demonstration of login/register functionality
+
+![BonVoya Login](https://user-images.githubusercontent.com/30938391/164984766-fbc068ca-90a4-4651-b034-8ea0f60e445b.gif)
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
