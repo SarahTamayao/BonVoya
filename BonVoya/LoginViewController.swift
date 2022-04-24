@@ -2,8 +2,6 @@
 //  LoginViewController.swift
 //  BonVoya
 //
-//  Created by Tony Makaj on 4/23/22.
-//
 
 import UIKit
 import Parse

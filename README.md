@@ -116,7 +116,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
         PFUser.logInWithUsername(inBackground: LoginViewController.username, password: password) { (user, error) in
             if user != nil { //if there exists a user in Parse database
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            } else { //user not found in Parse databse
+            } else { //user not found in Parse database
                 print("Error: \(error?.localizedDescription)")
             }
         }
