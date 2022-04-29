@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    
     /* 
     * username was made static in order to be accessible to the ViewController class, and any other class if necessary
     * A tradeoff is that any reference to a static variable must be preceded by the name of the view controller that it was declared in
