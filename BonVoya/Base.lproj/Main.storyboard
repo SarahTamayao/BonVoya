@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer-camp-children-vacation-traveling-and-family-camping-activity-poster-and-flyer" translatesAutoresizingMaskIntoConstraints="NO" id="6oU-SB-WCh">
-                                <rect key="frame" x="-206" y="-401" width="740" height="1698"/>
+                                <rect key="frame" x="-206" y="-446" width="740" height="1698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BonVoya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-KO-n4p">
@@ -31,14 +31,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="0YX-9i-R0b">
-                                <rect key="frame" x="0.0" y="356" width="414" height="570"/>
+                                <rect key="frame" x="0.0" y="344" width="414" height="540"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man-holding-traveling-map" translatesAutoresizingMaskIntoConstraints="NO" id="fis-QL-TvR">
-                                <rect key="frame" x="0.0" y="420" width="414" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REr-oq-9BN">
-                                <rect key="frame" x="31" y="646" width="352" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REr-oq-9BN">
+                                <rect key="frame" x="31" y="648" width="352" height="42"/>
                                 <color key="tintColor" red="0.0" green="0.21568627450980393" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" subtitle="" cornerStyle="capsule">
@@ -75,9 +71,13 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="4KC-RO-yzM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man-holding-traveling-map" translatesAutoresizingMaskIntoConstraints="NO" id="fis-QL-TvR">
+                                <rect key="frame" x="0.0" y="420" width="414" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wY4-mw-2at"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.56315693769999997" green="0.55487383830000003" blue="0.58623331379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wY4-mw-2at" firstAttribute="bottom" secondItem="Cuc-tl-M1p" secondAttribute="bottom" constant="108" id="3tc-j2-SiV"/>
                             <constraint firstItem="Cuc-tl-M1p" firstAttribute="top" secondItem="REr-oq-9BN" secondAttribute="bottom" constant="24" id="7qe-Nx-nBz"/>
