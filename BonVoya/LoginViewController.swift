@@ -11,7 +11,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    
     /* 
     * username was made static in order to be accessible to the ViewController class, and any other class if necessary
     * A tradeoff is that any reference to a static variable must be preceded by the name of the view controller that it was declared in
@@ -22,6 +21,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        usernameField.becomeFirstResponder()
     }
     
     @IBAction func onLogin(_ sender: Any) {

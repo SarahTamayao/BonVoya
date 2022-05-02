@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  WelcomeViewController.swift
 //  BonVoya
 //
 //  Created by Navid on 28/04/2022.
@@ -7,22 +7,16 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class WelcomeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
     
-    @IBAction func SignIn(_ sender: Any) {
-    }
-    
-    @IBAction func registerButton(_ sender: Any) {
-    }
     /*
-    // MARK: - Navigation
-
+     //MARK: Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
