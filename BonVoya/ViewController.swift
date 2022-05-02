@@ -6,16 +6,32 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    
 
-    @IBOutlet weak var userGreeting: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        userGreeting.text = "Hi " + LoginViewController.username + "," //we can access username from LoginViewController because it's static
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        //hide the navigation bar since, on the dashboard, we're not going to have a navbar
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = "row: \(indexPath.row)"
+        
+        return cell
+    }
 
     /*
     // MARK: - Navigation
