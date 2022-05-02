@@ -214,7 +214,7 @@
     <resources>
         <image name="Rectangle 25" width="428" height="769"/>
         <image name="Vector 1" width="428" height="529"/>
-        <image name="man-holding-traveling-map" width="2674" height="1748"/>
+        <image name="man-holding-traveling-map" width="3000" height="2600"/>
         <image name="summer-camp-children-vacation-traveling-and-family-camping-activity-poster-and-flyer" width="2966" height="3731"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
