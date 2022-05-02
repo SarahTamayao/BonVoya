@@ -85,13 +85,8 @@
                                 <rect key="frame" x="-1" y="134" width="391" height="602"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BonVoya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-HV-VZi">
-                                <rect key="frame" x="114" y="173" width="162" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-NX-kEZ">
-                                <rect key="frame" x="23" y="247" width="343" height="34"/>
+                                <rect key="frame" x="23" y="239" width="343" height="34"/>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="P2y-iz-1xt"/>
@@ -100,7 +95,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-OL-Wzu">
-                                <rect key="frame" x="23" y="298" width="343" height="34"/>
+                                <rect key="frame" x="23" y="290" width="343" height="34"/>
                                 <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="deP-Td-bAX"/>
@@ -109,7 +104,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-P4-7qy">
-                                <rect key="frame" x="221" y="355" width="145" height="47.666666666666686"/>
+                                <rect key="frame" x="221" y="347" width="145" height="47.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="g6e-BN-iK8"/>
                                 </constraints>
@@ -123,7 +118,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lD-3y-v19">
-                                <rect key="frame" x="23" y="354" width="145" height="47.666666666666686"/>
+                                <rect key="frame" x="23" y="346" width="145" height="47.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="2UH-Kt-g4O"/>
                                 </constraints>
@@ -136,13 +131,18 @@
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocW-fh-doF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BonVoya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-HV-VZi">
+                                <rect key="frame" x="114" y="165" width="162" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pPg-NX-kEZ" firstAttribute="top" secondItem="N0e-HV-VZi" secondAttribute="bottom" constant="26" id="2Tc-gQ-tcu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mXQ-OL-Wzu" secondAttribute="trailing" constant="24" id="7yn-av-cIc"/>
-                            <constraint firstItem="N0e-HV-VZi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="KlD-dj-uOc"/>
+                            <constraint firstItem="N0e-HV-VZi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="165" id="9Es-tq-6WE"/>
                             <constraint firstItem="mXQ-OL-Wzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="NPA-tj-Ofv"/>
                             <constraint firstItem="0lD-3y-v19" firstAttribute="top" secondItem="mXQ-OL-Wzu" secondAttribute="bottom" constant="22" id="P9I-DX-Fne"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K3V-P4-7qy" secondAttribute="trailing" constant="24" id="Qjk-lq-FFD"/>
@@ -158,7 +158,7 @@
                     <connections>
                         <outlet property="passwordField" destination="mXQ-OL-Wzu" id="4OG-gE-aiu"/>
                         <outlet property="usernameField" destination="pPg-NX-kEZ" id="c4u-Do-fop"/>
-                        <segue destination="uRd-ol-PqD" kind="presentation" identifier="loginSegue" id="aWC-cY-Q7W"/>
+                        <segue destination="uRd-ol-PqD" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="aWC-cY-Q7W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -170,7 +170,7 @@
             <objects>
                 <viewController id="vgX-xL-fae" customClass="ViewController" customModule="BonVoya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rjS-dR-gwk">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are logged in!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-cM-wIw">
@@ -205,8 +205,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRd-ol-PqD" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="1Ah-7T-2ma"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EET-Fk-xEX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
