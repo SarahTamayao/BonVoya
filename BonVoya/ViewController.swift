@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //This will tell the table view that the delegate and data source is present in the current view controller
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -21,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    //This function returns the number of table cells to show (this changes dynamically for each place
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
     }
