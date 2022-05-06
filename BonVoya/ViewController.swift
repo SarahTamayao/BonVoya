@@ -9,7 +9,7 @@ import MapKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
-    //This is Diana's comment
+
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
