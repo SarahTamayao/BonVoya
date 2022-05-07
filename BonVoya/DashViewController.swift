@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DashViewController.swift
 //  BonVoya
 //
 
@@ -7,7 +7,7 @@ import UIKit
 import Parse
 import MapKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
 
     var locationManager = CLLocationManager()
