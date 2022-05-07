@@ -64,10 +64,20 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //This controls the logic for each cell, any logic that is cell-specific (i.e., retrieving info from API) will be put into this function
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DashCell") as! DashCell
         
         cell.textLabel?.text = "row: \(indexPath.row)"
         
+        /*
+         //Defining API dictionaries to outlets
+         let activity = ____.["inputAPIactivityNameDictionary"] as! String
+         let desc = ___["inputAPIdescriptionDictionary"] as! String
+         
+         //Accessing outlets
+         cell.activityLabel = activity
+         cell.descLabel = desc
+         
+         */
         return cell
     }
 }

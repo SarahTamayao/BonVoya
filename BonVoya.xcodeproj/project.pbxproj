@@ -10,6 +10,7 @@
 		319FF43A281B6B8C00682A56 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FF439281B6B8C00682A56 /* WelcomeViewController.swift */; };
 		33C216BB1CD3E34AA6B67BC1 /* Pods_BonVoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF3112037FE61E5784924E0 /* Pods_BonVoyaTests.framework */; };
 		3B7578FC470F8CBF4201BA3E /* Pods_BonVoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */; };
+		4E55970D282654B5008C1184 /* DashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55970C282654B5008C1184 /* DashCell.swift */; };
 		A1056C2C2814D7AF0015F973 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1056C2B2814D7AF0015F973 /* LoginViewController.swift */; };
 		A159D70F281FA1B9005518CC /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159D70E281FA1B9005518CC /* DashViewController.swift */; };
 		A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92ED280FC0E8007822ED /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		0F7F48F1FA0152725AA0B08C /* Pods-BonVoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.release.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.release.xcconfig"; sourceTree = "<group>"; };
 		319FF439281B6B8C00682A56 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4901A6929CBA2F198F05A473 /* Pods-BonVoya-BonVoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E55970C282654B5008C1184 /* DashCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCell.swift; sourceTree = "<group>"; };
 		5AF3112037FE61E5784924E0 /* Pods_BonVoyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AFD5D7F05F802B936D4499 /* Pods-BonVoya-BonVoyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya-BonVoyaUITests.release.xcconfig"; path = "Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8DF13146E87E6BA33B251D7D /* Pods-BonVoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.release.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				A1056C2B2814D7AF0015F973 /* LoginViewController.swift */,
 				A159D70E281FA1B9005518CC /* DashViewController.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
+				4E55970C282654B5008C1184 /* DashCell.swift */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
 				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
@@ -419,6 +422,7 @@
 				A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */,
 				A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */,
 				319FF43A281B6B8C00682A56 /* WelcomeViewController.swift in Sources */,
+				4E55970D282654B5008C1184 /* DashCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
