@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     /* 
-    * username was made static in order to be accessible to the ViewController class, and any other class if necessary
+    * username was made static in order to be accessible to any other class if necessary
     * A tradeoff is that any reference to a static variable must be preceded by the name of the view controller that it was declared in
     * In this case, it's LoginViewController, so you would have to type LoginViewController.username to access the value of "username"
      */
@@ -20,7 +20,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //usernameField will be selected and keyboard will be shown when this view controller is loaded
         usernameField.becomeFirstResponder()
     }
     
@@ -29,7 +30,7 @@ class LoginViewController: UIViewController {
         let password = passwordField.text!
         
         PFUser.logInWithUsername(inBackground: LoginViewController.username, password: password) { (user, error) in
-            if user != nil { //if there exists a user in Parse database
+            if user != nil { //if there exists a user in Parse database, go to dashboard
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else { //user not found in Parse databse
                 print("Error: \(error?.localizedDescription)")
@@ -53,15 +54,4 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

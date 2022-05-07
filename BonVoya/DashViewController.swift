@@ -10,17 +10,21 @@ import MapKit
 class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
 
+    //Creates location manager object
     var locationManager = CLLocationManager()
     
+    //Once the iPhone has loaded
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() //this always comes first
         
-        // Do any additional setup after loading the view.
+        //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
         
+        //If the user has granted permission
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+            //Location manager setup
+            locationManager.delegate = self // Will receive update events
+            locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers // Indicates desired accuracy of location to 3km
             locationManager.startUpdatingLocation()
         }
         
@@ -28,31 +32,37 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         tableView.delegate = self
         
-        //hide the navigation bar since, on the dashboard, we're not going to have a navbar
+        //Hide the navigation bar since, on the dashboard, we're not going to have a navbar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    //locationManager will retrieve the coordinates of the iPhone and print it to the console
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        print("Locations = \(locValue.latitude) \(locValue.longitude)")
+        print("Locations = \(locValue.latitude) \(locValue.longitude)") // Prints latitude and longitude to console for debugging
         let geoCoder = CLGeocoder()
-        let location = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude) // <- New York
         
+        //Location variable will store a CLLocation object that contains the latitude and longitude
+        let location = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
+        
+        //Use geoCoder variable to perform a "reverse geocode," which is to take the coordinates and return a city
         geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, _) -> Void in
             placemarks?.forEach { (placemark) in
-                if let city = placemark.locality
+                if let city = placemark.locality // Locality just means city, so if "placemark" has a locality, print it
                 {
+                    // This can be changed to set the text of a label to the city, instead of just printing to console
                     print(city)
                 }
             }
         })
     }
     
-    //This function returns the number of table cells to show (this changes dynamically for each place
+    //Returns the number of table cells to show (this changes dynamically for each attraction, when we implement it)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
     }
     
+    //This controls the logic for each cell, any logic that is cell-specific (i.e., retrieving info from API) will be put into this function
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
@@ -60,15 +70,4 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
