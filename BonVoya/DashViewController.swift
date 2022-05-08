@@ -15,35 +15,10 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //Creates location manager object
     var locationManager = CLLocationManager()
-    
+        
     //Once the iPhone has loaded
     override func viewDidLoad() {
         super.viewDidLoad() //this always comes first
-        
-        //API Caller Places API Documentation as Places List By Radius
-        let headers = [
-            "X-RapidAPI-Host": "opentripmap-places-v1.p.rapidapi.com",
-            "X-RapidAPI-Key": "d21d23c616msh0dfcc69840c5774p1c3012jsne9d41c7837b3"
-        ]
-
-        let request = NSMutableURLRequest(url: NSURL(string: "https://opentripmap-places-v1.p.rapidapi.com/%7Blang%7D/places/radius?radius=500&lon=38.364285&lat=59.855685")! as URL,
-                                                cachePolicy: .useProtocolCachePolicy,
-                                            timeoutInterval: 10.0)
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
-
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
-            }
-        })
-
-        dataTask.resume()
-        //; End of API call
         
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
@@ -95,6 +70,32 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         })
     }
     
+    func callPlacesAPI(coordinateVar: CLLocationCoordinate2D) -> Void {
+        //API Caller Places API Documentation as Places List By Radius
+        let headers = [
+            "X-RapidAPI-Host": "opentripmap-places-v1.p.rapidapi.com",
+            "X-RapidAPI-Key": "d21d23c616msh0dfcc69840c5774p1c3012jsne9d41c7837b3"
+        ]
+        
+        let radiusValue = 500
+        
+        let request = NSMutableURLRequest(url: NSURL(string: "https://opentripmap-places-v1.p.rapidapi.com/%7Blang%7D/places/radius?radius=\(radiusValue)&lon=\(coordinateVar.longitude)&lat=\(coordinateVar.latitude)")! as URL,cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = headers
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if (error != nil) {
+                print(error)
+            } else {
+                let httpResponse = response as? HTTPURLResponse
+                print(httpResponse)
+            }
+        })
+
+        dataTask.resume()
+        //; End of API call
+    }
     
     //Returns the number of table cells to show (this changes dynamically for each attraction, when we implement it)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
