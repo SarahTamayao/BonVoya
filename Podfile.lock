@@ -7,10 +7,12 @@ PODS:
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
     - Bolts/Tasks (= 1.9.1)
+  - WeatherKit (0.1.7)
 
 DEPENDENCIES:
   - AlamofireImage
   - Parse
+  - WeatherKit (~> 0.1)
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
+    - WeatherKit
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  WeatherKit: 228125ba1da7c6720e29574351806e7628a86ad2
 
-PODFILE CHECKSUM: 66589b479499d9825138f19b113fd7641c8d6a85
+PODFILE CHECKSUM: 99fda3a746c8182ea57ef5d5c89f4c6c0463fa03
 
 COCOAPODS: 1.11.3

@@ -9,7 +9,9 @@ import MapKit
 
 class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var cityViewBorder: UIImageView!
+    
     //Creates location manager object
     var locationManager = CLLocationManager()
     
@@ -34,12 +36,23 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //Hide the navigation bar since, on the dashboard, we're not going to have a navbar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        //Specify properies for cityViewBorder
+        cityViewBorder.clipsToBounds = false
+        cityViewBorder.layer.shadowColor = UIColor.black.cgColor
+        cityViewBorder.layer.shadowOpacity = 1
+        cityViewBorder.layer.shadowOffset = CGSize.zero
+        cityViewBorder.layer.shadowRadius = 5
+        cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
+        cityViewBorder.layer.cornerRadius = 15
     }
     
     //locationManager will retrieve the coordinates of the iPhone and print it to the console
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        
         print("Locations = \(locValue.latitude) \(locValue.longitude)") // Prints latitude and longitude to console for debugging
+        
         let geoCoder = CLGeocoder()
         
         //Location variable will store a CLLocation object that contains the latitude and longitude
@@ -50,8 +63,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
             placemarks?.forEach { (placemark) in
                 if let city = placemark.locality // Locality just means city, so if "placemark" has a locality, print it
                 {
-                    // This can be changed to set the text of a label to the city, instead of just printing to console
-                    print(city)
+                    self.cityLabel.text = city
                 }
             }
         })
