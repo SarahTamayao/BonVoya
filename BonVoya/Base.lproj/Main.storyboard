@@ -227,6 +227,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVO-02-ADO">
+                                <rect key="frame" x="145" y="148" width="123" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KsP-bD-6zu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -236,6 +243,7 @@
                         <outlet property="cityLabel" destination="R4G-mT-Gah" id="SgA-Do-8rY"/>
                         <outlet property="cityViewBorder" destination="0Au-7y-d8p" id="jZW-Zn-Tds"/>
                         <outlet property="tableView" destination="esq-pc-Gwe" id="CnW-jI-ZUJ"/>
+                        <outlet property="weatherLabel" destination="zVO-02-ADO" id="rwT-IO-vW3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygf-tY-Mb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -11,10 +11,14 @@ import Foundation
 class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     
     //Creates location manager object
     var locationManager = CLLocationManager()
+    
+    var weatherManager = WeatherAPICaller()
+    var weather: ResponseBody?
         
     //Once the iPhone has loaded
     override func viewDidLoad() {
@@ -46,6 +50,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cityViewBorder.layer.shadowRadius = 5
         cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
         cityViewBorder.layer.cornerRadius = 15
+        
+
     }
     
     //locationManager will retrieve the coordinates of the iPhone and print it to the console
@@ -68,6 +74,14 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 }
             }
         })
+        
+//        do {
+//            weather = weatherManager.getCurrentWeather(latitude: locValue.latitude, longitude: locValue.longitude)
+//
+//            self.weatherLabel.text = "Weather: \(weather!.main.temp as Double)"
+//        } catch {
+//            print("Error getting weather \(error.localizedDescription)")
+//        }
     }
     
     func callPlacesAPI(coordinateVar: CLLocationCoordinate2D) -> Void {
