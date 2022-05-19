@@ -78,10 +78,9 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         })
         
         let weatherManager = WeatherManager()
-        let currentTemp: Double = 0.0
-        let currentTemp = weatherManager.getCurrentTemperature(coords: locValue)
-        
-        self.weatherLabel.text = "Weather: \(currentTemp)"
+        weatherManager.getCurrentTemperature(coords: locValue) { currentTemperature in
+            self.weatherLabel.text = "Weather: \(currentTemperature)"
+        }
     }
     
     func callPlacesAPI(coordinateVar: CLLocationCoordinate2D) -> Void {
