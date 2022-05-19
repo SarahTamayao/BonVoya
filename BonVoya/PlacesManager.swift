@@ -46,12 +46,21 @@ class PlacesManager {
             DispatchQueue.main.async {
                 print(address, "Location:", coordinate) // Rio de Janeiro, Brazil Location: CLLocationCoordinate2D(latitude: -22.9108638, longitude: -43.2045436)
             }
-
         }
     }
-    
-    
 }
 
-    
-    
+struct Entry: Codable {
+    let results: [Result]
+}
+
+struct Result: Codable {
+    let id, name: String
+    let location: Location
+    let types: [String]
+    let distance: Int
+}
+
+struct Location: Codable {
+    let lat, lng: Double
+}
