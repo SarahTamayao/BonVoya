@@ -7,18 +7,22 @@ import UIKit
 import Parse
 import MapKit
 import Foundation
+import Alamofire
+import AlamofireImage
 
 class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
+        
+    static var currentLocationCoordinates: CLLocationCoordinate2D?
     
     //Creates location manager object
     var locationManager = CLLocationManager()
     
-    var weatherManager = WeatherAPICaller()
-    var weather: ResponseBody?
+//    var weatherManager = WeatherAPICaller()
+//    var weather: ResponseBody?
         
     //Once the iPhone has loaded
     override func viewDidLoad() {
@@ -50,11 +54,9 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cityViewBorder.layer.shadowRadius = 5
         cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
         cityViewBorder.layer.cornerRadius = 15
-        
-
     }
     
-    //locationManager will retrieve the coordinates of the iPhone and print it to the console
+    //locationManager will retrieve the coordinates of the iPhone and change the text label
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         
@@ -75,13 +77,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         })
         
-//        do {
-//            weather = weatherManager.getCurrentWeather(latitude: locValue.latitude, longitude: locValue.longitude)
-//
-//            self.weatherLabel.text = "Weather: \(weather!.main.temp as Double)"
-//        } catch {
-//            print("Error getting weather \(error.localizedDescription)")
-//        }
+        let weatherManager = WeatherManager()
+        weatherManager.getWeather(coords: locValue)
     }
     
     func callPlacesAPI(coordinateVar: CLLocationCoordinate2D) -> Void {
@@ -130,7 +127,6 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
          //Accessing outlets
          cell.activityLabel = activity
          cell.descLabel = desc
-         
          */
         return cell
     }

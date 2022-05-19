@@ -12,7 +12,7 @@
 		3B7578FC470F8CBF4201BA3E /* Pods_BonVoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */; };
 		4E55970D282654B5008C1184 /* DashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55970C282654B5008C1184 /* DashCell.swift */; };
 		A1056C2C2814D7AF0015F973 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1056C2B2814D7AF0015F973 /* LoginViewController.swift */; };
-		A11D77522827955100895EF3 /* WeatherAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D77512827955100895EF3 /* WeatherAPICaller.swift */; };
+		A12E056A2835B0CB0047F9FF /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E05692835B0CB0047F9FF /* WeatherManager.swift */; };
 		A159D70F281FA1B9005518CC /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A159D70E281FA1B9005518CC /* DashViewController.swift */; };
 		A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92ED280FC0E8007822ED /* AppDelegate.swift */; };
 		A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A92EF280FC0E8007822ED /* SceneDelegate.swift */; };
@@ -52,7 +52,7 @@
 		8DF13146E87E6BA33B251D7D /* Pods-BonVoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.release.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.release.xcconfig"; sourceTree = "<group>"; };
 		8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoya_BonVoyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1056C2B2814D7AF0015F973 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A11D77512827955100895EF3 /* WeatherAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPICaller.swift; sourceTree = "<group>"; };
+		A12E05692835B0CB0047F9FF /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		A159D70E281FA1B9005518CC /* DashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
 		A19A92EA280FC0E8007822ED /* BonVoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonVoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19A92ED280FC0E8007822ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				319FF439281B6B8C00682A56 /* WelcomeViewController.swift */,
 				A1056C2B2814D7AF0015F973 /* LoginViewController.swift */,
 				A159D70E281FA1B9005518CC /* DashViewController.swift */,
-				A11D77512827955100895EF3 /* WeatherAPICaller.swift */,
+				A12E05692835B0CB0047F9FF /* WeatherManager.swift */,
 				4E55970C282654B5008C1184 /* DashCell.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
@@ -422,9 +422,9 @@
 			files = (
 				A159D70F281FA1B9005518CC /* DashViewController.swift in Sources */,
 				A1056C2C2814D7AF0015F973 /* LoginViewController.swift in Sources */,
+				A12E056A2835B0CB0047F9FF /* WeatherManager.swift in Sources */,
 				A19A92EE280FC0E8007822ED /* AppDelegate.swift in Sources */,
 				A19A92F0280FC0E8007822ED /* SceneDelegate.swift in Sources */,
-				A11D77522827955100895EF3 /* WeatherAPICaller.swift in Sources */,
 				319FF43A281B6B8C00682A56 /* WelcomeViewController.swift in Sources */,
 				4E55970D282654B5008C1184 /* DashCell.swift in Sources */,
 			);
