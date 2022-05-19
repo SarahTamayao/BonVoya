@@ -11,7 +11,9 @@ import Alamofire
 import AlamofireImage
 
 class WeatherManager {
-    func getWeather(coords: CLLocationCoordinate2D) {
+    func getCurrentTemperature(coords: CLLocationCoordinate2D, completion: @escaping (Double) -> Void) -> Double {
+        var currentTemperature: Double = 0.0
+        
         //Weather function
         let apiKey: String = "4cdc43b784690435fdb782327f18f41f"
         let unit: String = "imperial" //supports standard, metric, and imperial
@@ -19,9 +21,17 @@ class WeatherManager {
         let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(coords.latitude)&lon=\(coords.longitude)&appid=\(apiKey)&units=\(unit)")!
         let weatherURLConvertible: Alamofire.URLConvertible = weatherURL
         
-        AF.request(weatherURLConvertible).responseJSON { (response) in
-            if response != nil {
-                let decodedData = try? JSONDecoder().decode(ResponseBody.self, from: response)
+        AF.request(weatherURLConvertible).responseData { (response) in
+            switch response.result {
+            case .failure(let error):
+                print(error)
+            case .success(let data):
+                do {
+                    let weatherDataResponseBody = try JSONDecoder().decode(ResponseBody.self, from: data)
+                    currentTemperature = weatherDataResponseBody.main.temp
+                } catch let error {
+                    print(error)
+                }
             }
         }
     }
