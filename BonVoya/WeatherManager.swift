@@ -11,8 +11,7 @@ import Alamofire
 import AlamofireImage
 
 class WeatherManager {
-    func getCurrentTemperature(coords: CLLocationCoordinate2D, completion: @escaping (Double) -> Void) -> Double {
-        var currentTemperature: Double = 0.0
+    func getCurrentTemperature(coords: CLLocationCoordinate2D, completion: @escaping (Double) -> ()) {
         
         //Weather function
         let apiKey: String = "4cdc43b784690435fdb782327f18f41f"
@@ -28,7 +27,9 @@ class WeatherManager {
             case .success(let data):
                 do {
                     let weatherDataResponseBody = try JSONDecoder().decode(ResponseBody.self, from: data)
-                    currentTemperature = weatherDataResponseBody.main.temp
+                    let currentTemperature: Double = weatherDataResponseBody.main.temp
+                    
+                    completion(currentTemperature)
                 } catch let error {
                     print(error)
                 }
