@@ -58,8 +58,10 @@ class PlacesManager {
             case .success(let data):
                 do {
                     let placesDataResponseBody = try JSONDecoder().decode(PlacesResponseBody.self, from: data)
-                    let resultsArr = PlacesResponseBody.location.lat
+                    let result = placesDataResponseBody.results[0].id
                     
+                    
+                    print(result)
                 } catch let error {
                     print(error.localizedDescription)
                 }
@@ -84,19 +86,18 @@ class PlacesManager {
 }
 
 struct PlacesResponseBody: Decodable {
-    var results: [Result]
-    var location: Location
-    
-    struct Result: Decodable {
-        let id, name: String
-        let location: Location
-        let types: [String]
-        let distance: Int
-    }
-
-    struct Location: Decodable {
-        let lat, lng: Double
-    }
+    let results: [Result]
 }
 
+struct Result: Decodable {
+    let id: String
+    let name: String
+    let location: Location
+    let types: [String]
+    let distance: Int
+}
 
+struct Location: Decodable {
+    let lat: Double
+    let lng: Double
+}
