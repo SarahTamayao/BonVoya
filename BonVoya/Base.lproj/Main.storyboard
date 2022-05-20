@@ -305,7 +305,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uld-uy-KuN">
                                 <rect key="frame" x="325" y="88" width="111" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -315,7 +314,6 @@
                                     <action selector="didTapButton:" destination="vgX-xL-fae" eventType="touchUpInside" id="ovO-7r-eN4"/>
                                 </connections>
                             </button>
-=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8e-Ea-CCS">
                                 <rect key="frame" x="7" y="384" width="95" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -339,7 +337,6 @@
                                 <rect key="frame" x="7" y="250" width="61" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
->>>>>>> dashboard
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KsP-bD-6zu"/>
                         <color key="backgroundColor" red="0.92686808109999996" green="0.83312183620000002" blue="0.46658432480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
