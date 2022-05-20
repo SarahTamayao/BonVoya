@@ -18,7 +18,7 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet var tableView: UITableView!
     
-    let myData = ["My Trip to Paris", "My Trip to Geneva", "My Trip to Italy", "My Trip to Amsterdam", "My Trip to Greece", "My Trip Spain"]
+    let countries = ["My Trip to Paris", "My Trip to Geneva", "My Trip to Italy", "My Trip to Amsterdam", "My Trip to Greece", "My Trip to Spain"]
     let myData2 = ["From 3/10 to 3/20", "From 4/10 to 4/20", "From 5/10 to 5/20", "From 6/10 to 6/20", "From 7/10 to 7/20", "From 8/10 to 8/20" ]
     
     override func viewDidLoad() {
@@ -48,10 +48,11 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItineraryCell", for: indexPath) as! ItineraryCell
-        
-        cell.myLabel.text = myData[indexPath.row]
+        let country = countries[indexPath.row]
+        cell.myLabel.text = countries[indexPath.row]
         cell.myImageView.backgroundColor = .clear
         cell.myLabel2.text = myData2[indexPath.row]
+        cell.myImageView.image = UIImage(named: country)
 
         
 
