@@ -17,6 +17,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
+    @IBOutlet weak var NotesView: UIImageView!
+    
     
     @IBOutlet weak var writenotes: UITextView!
     //Temporary way to access user profile page
@@ -35,7 +37,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //force light mode if the user's phone is on dark mode
         overrideUserInterfaceStyle = .light
         notes.isUserInteractionEnabled = false
-        writenotes.isUserInteractionEnabled = true
+
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -71,6 +73,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cityViewBorder.layer.shadowRadius = 5
         cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
         cityViewBorder.layer.cornerRadius = 15
+        NotesView.layer.masksToBounds = true
+        NotesView.layer.cornerRadius = 20
     }
     
     //locationManager will retrieve the coordinates of the iPhone and change the text label
