@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItineraryCell" rowHeight="127" id="KGk-i7-Jjw" customClass="ItineraryCell" customModule="BonVoya" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 16" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-NX-CXa">
+                        <rect key="frame" x="5" y="5" width="100" height="117"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="N4b-Oe-fcW"/>
+                            <constraint firstAttribute="height" constant="117" id="ofY-Z5-ogN"/>
+                            <constraint firstAttribute="width" constant="100" id="vnU-eq-2Om"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From 5/10 - 5/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3S-6z-KpO">
+                        <rect key="frame" x="110" y="25" width="219" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trip to Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-YB-KV4">
+                        <rect key="frame" x="110" y="5" width="219" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" red="0.92549019610000005" green="0.83137254900000002" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9vV-NX-CXa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="6vg-Bf-dlk"/>
+                    <constraint firstItem="9vV-NX-CXa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="MVH-t3-6zT"/>
+                    <constraint firstAttribute="bottom" secondItem="9vV-NX-CXa" secondAttribute="bottom" constant="5" id="e5I-hv-tWa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.92686808109999996" green="0.83312183620000002" blue="0.46658432480000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="myImageView" destination="9vV-NX-CXa" id="QBB-wl-9OI"/>
+                <outlet property="myLabel" destination="0lR-YB-KV4" id="qKp-pl-cdG"/>
+                <outlet property="myLabel2" destination="J3S-6z-KpO" id="MCP-AC-Gvr"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="17.075892857142858"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 16" width="78" height="98"/>
+    </resources>
+</document>

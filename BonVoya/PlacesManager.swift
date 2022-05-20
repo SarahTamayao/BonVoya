@@ -30,8 +30,9 @@ class PlacesManager {
         
         let radius: String = "10000" //i believe this is in meters?
         let language: String = "en"
+        let type:String = "restaurant"
         
-        let placesURL = URL(string: "https://trueway-places.p.rapidapi.com/FindPlacesNearby?location=\(coordinate.latitude)%2C\(coordinate.longitude)&radius=\(radius)&language=\(language)")!
+        let placesURL = URL(string: "https://trueway-places.p.rapidapi.com/FindPlacesNearby?location=\(coordinate.latitude)%2C\(coordinate.longitude)&radius=\(radius)&language=\(language)&type=\(type)")!
         let placesURLConvertible: Alamofire.URLConvertible = placesURL
         
         
@@ -66,6 +67,9 @@ struct PlacesResponseBody: Decodable {
 struct Result: Decodable {
     let id: String
     let name: String
+    let address: String
+    let phoneNumber: String?
+    let website: String?
     let location: Location
     let types: [String]
     let distance: Int

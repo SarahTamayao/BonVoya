@@ -18,6 +18,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
+    @IBOutlet weak var NotesView: UIImageView!
+    
     
     @IBAction func didTapButton(_ sender: Any) {
         
@@ -44,7 +46,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //force light mode if the user's phone is on dark mode
         overrideUserInterfaceStyle = .light
         notes.isUserInteractionEnabled = false
-        writenotes.isUserInteractionEnabled = true
+
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -80,6 +82,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cityViewBorder.layer.shadowRadius = 5
         cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
         cityViewBorder.layer.cornerRadius = 15
+        NotesView.layer.masksToBounds = true
+        NotesView.layer.cornerRadius = 20
     }
     
     //locationManager will retrieve the coordinates of the iPhone and change the text label
@@ -111,7 +115,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let placeManager = PlacesManager()
         placeManager.getNearbyPlaces(coordinate: locValue) { result in
             DashViewController.resultData = result
-            
+            self.tableView.reloadData()
         }
     }
     
@@ -124,14 +128,22 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DashCell") as! DashCell
         
-        cell.activityLabel.text = "BLAH"
-
+        let activity = DashViewController.resultData?[indexPath.row].name
+        let address: String = DashViewController.resultData?[indexPath.row].address ?? "N/A"
+        let phoneNumber: String = DashViewController.resultData?[indexPath.row].phoneNumber ?? "N/A"
+        let website: String = DashViewController.resultData?[indexPath.row].website ?? "N/A"
+        let distance = DashViewController.resultData?[indexPath.row].distance
+        
+        let description: String = "Address: \(address)\nPhone #: \(phoneNumber)\nWebsite: \(website)\n\(distance ?? -1)m from you!"
+        
+        cell.activityLabel.text = activity
+        cell.descLabel.text = description
+        
          //Defining API dictionaries to outlets
 //         let activity = ____.["inputAPIactivityNameDictionary"] as! String
 //         let desc = ___["inputAPIdescriptionDictionary"] as! String
 //
 //         //Accessing outlets
-//         cell.activityLabel = activity
 //         cell.descLabel = desc
 
         return cell
