@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="715"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" fixedFrame="YES" image="Vector 1" translatesAutoresizingMaskIntoConstraints="NO" id="0YX-9i-R0b">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" fixedFrame="YES" image="loginVector" translatesAutoresizingMaskIntoConstraints="NO" id="0YX-9i-R0b">
                                 <rect key="frame" x="0.0" y="328" width="414" height="626"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
@@ -348,8 +348,8 @@
     <color key="tintColor" red="0.0" green="0.2156862745" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="EmmaWatson" width="225" height="225"/>
-        <image name="Vector 1" width="428" height="529"/>
         <image name="loginRectangle" width="428" height="769"/>
+        <image name="loginVector" width="428" height="529"/>
         <image name="man-holding-traveling-map" width="2674" height="1748"/>
         <image name="summer-camp-children-vacation-traveling-and-family-camping-activity-poster-and-flyer" width="2966" height="3731"/>
         <namedColor name="AccentColor">
