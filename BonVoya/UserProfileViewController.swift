@@ -28,8 +28,8 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         overrideUserInterfaceStyle = .light
         
         // Do any additional setup after loading the view.
-        profileName.layer.masksToBounds = true
-        profileName.layer.cornerRadius = profileName.frame.height / 2
+        profilePicture.layer.masksToBounds = true
+        profilePicture.layer.cornerRadius = profilePicture.frame.height / 2
 
         bioBackground.layer.masksToBounds = true
         bioBackground.layer.cornerRadius = 20
