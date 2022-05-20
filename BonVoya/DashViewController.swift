@@ -11,13 +11,15 @@ import Alamofire
 import AlamofireImage
 
 class DashViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+    @IBOutlet weak var notes: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
     
-        //Temporary way to access user profile page
+    @IBOutlet weak var writenotes: UITextView!
+    //Temporary way to access user profile page
     static var currentLocationCoordinates: CLLocationCoordinate2D?
     static var resultData: [Result]?
     
@@ -32,7 +34,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad() //this always comes first
         //force light mode if the user's phone is on dark mode
         overrideUserInterfaceStyle = .light
-        
+        notes.isUserInteractionEnabled = false
+        writenotes.isUserInteractionEnabled = true
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
         
