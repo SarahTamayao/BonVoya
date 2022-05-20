@@ -166,15 +166,15 @@
 				319FF43F2835E5EE00682A56 /* UserProfileViewController.swift */,
 				A159D70E281FA1B9005518CC /* DashViewController.swift */,
 				4E55970C282654B5008C1184 /* DashCell.swift */,
+				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
 				A12E05692835B0CB0047F9FF /* WeatherManager.swift */,
 				4E77A22C2835D9EF00015A75 /* PlacesManager.swift */,
 				A1C1D6C42836CC3100770A62 /* ImageManager.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
+				31D17AF028374C0900F41CED /* ItineraryCell.xib */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
 				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
-				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
-				31D17AF028374C0900F41CED /* ItineraryCell.xib */,
 			);
 			path = BonVoya;
 			sourceTree = "<group>";

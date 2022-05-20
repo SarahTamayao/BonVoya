@@ -114,14 +114,22 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DashCell") as! DashCell
         
-        cell.activityLabel.text = "BLAH"
-
+        let activity = DashViewController.resultData?[indexPath.row].name
+        let address: String = DashViewController.resultData?[indexPath.row].address ?? "N/A"
+        let phoneNumber: String = DashViewController.resultData?[indexPath.row].phoneNumber ?? "N/A"
+        let website: String = DashViewController.resultData?[indexPath.row].website ?? "N/A"
+        let distance = DashViewController.resultData?[indexPath.row].distance
+        
+        let description: String = "Address: \(address)\nPhone #: \(phoneNumber)\nWebsite: \(website)\n\(distance ?? 0)m from you!"
+        
+        cell.activityLabel.text = activity
+        cell.descLabel.text = description
+        
          //Defining API dictionaries to outlets
 //         let activity = ____.["inputAPIactivityNameDictionary"] as! String
 //         let desc = ___["inputAPIdescriptionDictionary"] as! String
 //
 //         //Accessing outlets
-//         cell.activityLabel = activity
 //         cell.descLabel = desc
 
         return cell
