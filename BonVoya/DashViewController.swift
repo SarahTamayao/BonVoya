@@ -15,7 +15,11 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
-        
+        //Temporary way to access user profile page 
+    @IBAction func didTapButton(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "UserProfileVC") as! UserProfileViewController
+        present(vc, animated: false)
+    }
     static var currentLocationCoordinates: CLLocationCoordinate2D?
     
     //Creates location manager object
