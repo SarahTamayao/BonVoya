@@ -52,12 +52,9 @@
 		0F7F48F1FA0152725AA0B08C /* Pods-BonVoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.release.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.release.xcconfig"; sourceTree = "<group>"; };
 		319FF439281B6B8C00682A56 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		319FF43F2835E5EE00682A56 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		343AA7692837563D0081BABD /* ItineraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
-=======
 		31D17AEF28374C0900F41CED /* ItineraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryCell.swift; sourceTree = "<group>"; };
 		31D17AF028374C0900F41CED /* ItineraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItineraryCell.xib; sourceTree = "<group>"; };
->>>>>>> dashboard
+		343AA7692837563D0081BABD /* ItineraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
 		4901A6929CBA2F198F05A473 /* Pods-BonVoya-BonVoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya-BonVoyaUITests/Pods-BonVoya-BonVoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E55970C282654B5008C1184 /* DashCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCell.swift; sourceTree = "<group>"; };
 		4E77A22C2835D9EF00015A75 /* PlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesManager.swift; sourceTree = "<group>"; };
@@ -169,6 +166,7 @@
 				319FF439281B6B8C00682A56 /* WelcomeViewController.swift */,
 				A1056C2B2814D7AF0015F973 /* LoginViewController.swift */,
 				319FF43F2835E5EE00682A56 /* UserProfileViewController.swift */,
+				343AA7692837563D0081BABD /* ItineraryViewController.swift */,
 				A159D70E281FA1B9005518CC /* DashViewController.swift */,
 				4E55970C282654B5008C1184 /* DashCell.swift */,
 				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
@@ -180,7 +178,6 @@
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
 				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
-				343AA7692837563D0081BABD /* ItineraryViewController.swift */,
 			);
 			path = BonVoya;
 			sourceTree = "<group>";
