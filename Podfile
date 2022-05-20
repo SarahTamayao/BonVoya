@@ -8,7 +8,6 @@ target 'BonVoya' do
   # Pods for BonVoya
   pod 'AlamofireImage'
   pod 'Parse'
-  pod 'UnsplashPhotoPicker', '~> 1.3'
 
   target 'BonVoyaTests' do
     inherit! :search_paths
