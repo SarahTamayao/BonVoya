@@ -1,7 +1,11 @@
 {
   "images" : [
     {
+<<<<<<< HEAD:BonVoya/Assets.xcassets/paris.imageset/Contents.json
       "filename" : "paris.jpeg",
+=======
+      "filename" : "Rectangle 25 (1).png",
+>>>>>>> 3e549cc4a28d83393e88c02cff0d5031e74699bd:BonVoya/Assets.xcassets/LoginBackground/Rectangle 25.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "1x"
     },
