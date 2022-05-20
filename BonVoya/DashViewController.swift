@@ -99,13 +99,12 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let placeManager = PlacesManager()
         placeManager.getNearbyPlaces(coordinate: locValue) { result in
             DashViewController.resultData = result
-            
         }
     }
     
     //Returns the number of table cells to show (this changes dynamically for each attraction, when we implement it)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DashViewController.resultData!.count
+        return DashViewController.resultData?.count ?? 20
     }
     
     //This controls the logic for each cell, any logic that is cell-specific (i.e., retrieving info from API) will be put into this function
