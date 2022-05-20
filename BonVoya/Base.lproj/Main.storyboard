@@ -214,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="summer-camp-children-vacation-traveling-and-family-camping-activity-poster-and-flyer" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-Ex-pwK">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="418"/>
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-ad-uQB">

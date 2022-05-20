@@ -14,8 +14,8 @@ class ItineraryViewController: UIViewController, UITableViewDataSource, UITableV
   
     
  
-    let notes = ["We will wake up at 9:30AM to catch Breakfast and climb the Eifel Tower", "We will wake up at 6:30AM to view the sunrise and ride a boat in the canals", "We will wake up at 10:30AM to ride bikes through the city"]
-    let places = ["Eifel Tower", "Italy", "Amsterdam"]
+    let notes = ["We will wake up at 9:30AM to catch Breakfast and climb the Eifel Tower", "During my visit to the museum, I need to get a selfie with Mona Lisa!", "Have to book a guide with good reviews for the Catacombs.", "I will catch a taxi to the Gate."]
+    let places = ["Eiffel Tower", "Lourve Museum", "Catacombs", "Arc De Triompe"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
