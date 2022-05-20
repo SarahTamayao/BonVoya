@@ -52,13 +52,6 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         cell.myLabel.text = myData[indexPath.row]
         cell.myImageView.backgroundColor = .clear
         cell.myLabel2.text = myData2[indexPath.row]
-
-        
-
-        
-       
         return cell
     }
-    
-    
 }
