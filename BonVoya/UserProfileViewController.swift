@@ -55,11 +55,22 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         cell.myImageView.image = UIImage(named: country)
         
         
-
         
-
-        
-       
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "profileToTrip", sender: nil)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination
+//        // Pass the selected object to the new view controller
+//        let cell = sender as! UITableViewCell
+//        let indexPath = tableView.indexPath(for: cell)!
+//
+//        let itineraryViewController = segue.destination as! ItineraryViewController
+//
+//        tableView.deselectRow(at: indexPath, animated: true)
+//    }
 }

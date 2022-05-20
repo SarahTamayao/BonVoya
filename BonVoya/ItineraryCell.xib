@@ -52,7 +52,7 @@
                 <outlet property="myLabel" destination="0lR-YB-KV4" id="qKp-pl-cdG"/>
                 <outlet property="myLabel2" destination="J3S-6z-KpO" id="MCP-AC-Gvr"/>
             </connections>
-            <point key="canvasLocation" x="187.68115942028987" y="17.075892857142858"/>
+            <point key="canvasLocation" x="162" y="-39"/>
         </tableViewCell>
     </objects>
     <resources>
