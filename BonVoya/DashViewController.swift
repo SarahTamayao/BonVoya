@@ -21,13 +21,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var NotesView: UIImageView!
     
     
-    @IBAction func didTapButton(_ sender: Any) {
-        
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ItineraryViewController") else { return }
-        present(vc, animated: true)
-            
-        
-    }
+  
     
     @IBOutlet weak var writenotes: UITextView!
     //Temporary way to access user profile page

@@ -53,6 +53,8 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
         cell.myImageView.backgroundColor = .clear
         cell.myLabel2.text = myData2[indexPath.row]
         cell.myImageView.image = UIImage(named: country)
+        
+        
 
         
 

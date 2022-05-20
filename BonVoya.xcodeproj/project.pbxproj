@@ -29,6 +29,8 @@
 		A19A9311280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */; };
 		A1C1D6C52836CC3100770A62 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1D6C42836CC3100770A62 /* ImageManager.swift */; };
 		C1B85BFF63416CCF08542CB1 /* Pods_BonVoya_BonVoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */; };
+		CC5B74D828382927005D2D81 /* ItineraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */; };
+		CC5B74D928382927005D2D81 /* ItineraryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5B74D728382927005D2D81 /* ItineraryViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		A1C1D6C42836CC3100770A62 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B1E16885653B267EA1C2C98A /* Pods-BonVoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.debug.xcconfig"; sourceTree = "<group>"; };
 		C979C36C94CF2D3552A68F75 /* Pods-BonVoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewCell.swift; sourceTree = "<group>"; };
+		CC5B74D728382927005D2D81 /* ItineraryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItineraryViewCell.xib; sourceTree = "<group>"; };
 		D2475C6BC72FE841AC28A3D9 /* Pods_BonVoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonVoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,12 +173,14 @@
 				343AA7692837563D0081BABD /* ItineraryViewController.swift */,
 				A159D70E281FA1B9005518CC /* DashViewController.swift */,
 				4E55970C282654B5008C1184 /* DashCell.swift */,
+				CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */,
 				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
 				A12E05692835B0CB0047F9FF /* WeatherManager.swift */,
 				4E77A22C2835D9EF00015A75 /* PlacesManager.swift */,
 				A1C1D6C42836CC3100770A62 /* ImageManager.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
 				31D17AF028374C0900F41CED /* ItineraryCell.xib */,
+				CC5B74D728382927005D2D81 /* ItineraryViewCell.xib */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
 				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
@@ -312,6 +318,7 @@
 				31D17AF228374C0900F41CED /* ItineraryCell.xib in Resources */,
 				A19A92F7280FC0EB007822ED /* Assets.xcassets in Resources */,
 				A19A92F5280FC0E8007822ED /* Main.storyboard in Resources */,
+				CC5B74D928382927005D2D81 /* ItineraryViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +448,7 @@
 			files = (
 				A159D70F281FA1B9005518CC /* DashViewController.swift in Sources */,
 				4E77A22D2835D9EF00015A75 /* PlacesManager.swift in Sources */,
+				CC5B74D828382927005D2D81 /* ItineraryViewCell.swift in Sources */,
 				343AA76A2837563D0081BABD /* ItineraryViewController.swift in Sources */,
 				A1056C2C2814D7AF0015F973 /* LoginViewController.swift in Sources */,
 				A1C1D6C52836CC3100770A62 /* ImageManager.swift in Sources */,
