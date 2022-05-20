@@ -3,6 +3,7 @@
 //  BonVoya
 //
 
+
 import UIKit
 import Parse
 import MapKit
@@ -17,6 +18,14 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "ItineraryViewController") else { return }
+        present(vc, animated: true)
+            
+        
+    }
     
     @IBOutlet weak var writenotes: UITextView!
     //Temporary way to access user profile page
@@ -127,4 +136,5 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         return cell
     }
+    
 }
