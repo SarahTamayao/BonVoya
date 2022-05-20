@@ -60,6 +60,4 @@ class UserProfileViewController: UIViewController, UITableViewDelegate, UITableV
        
         return cell
     }
-    
-    
 }
