@@ -99,6 +99,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let placeManager = PlacesManager()
         placeManager.getNearbyPlaces(coordinate: locValue) { result in
             DashViewController.resultData = result
+            
         }
     }
     
