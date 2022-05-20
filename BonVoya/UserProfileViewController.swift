@@ -9,34 +9,24 @@ import UIKit
 
 
 class UserProfileViewController: UIViewController {
-    @IBOutlet weak var Biotextfield: UITextView!
-    @IBOutlet weak var ProfileView: UIImageView!
-    @IBOutlet weak var TextView: UIImageView!
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var bioBackground: UIImageView!
+    @IBOutlet weak var bioField: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ProfileView.backgroundColor = .white
-        ProfileView.layer.masksToBounds = true
-        ProfileView.layer.cornerRadius = ProfileView.frame.height / 2
-
+        //force light mode if the user's phone is on dark mode
+        overrideUserInterfaceStyle = .light
         
-        TextView.backgroundColor = .gray
-        TextView.layer.masksToBounds = true
-        Biotextfield.backgroundColor = .gray
-        TextView.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
+        profileName.layer.masksToBounds = true
+        profileName.layer.cornerRadius = profileName.frame.height / 2
+
+        bioBackground.layer.masksToBounds = true
+        profileName.layer.cornerRadius = 10
+        profileName.text = LoginViewController.username
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -17,11 +17,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
     
-        //Temporary way to access user profile page 
-    @IBAction func didTapButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "UserProfileVC") as! UserProfileViewController
-        present(vc, animated: false)
-    }
+        //Temporary way to access user profile page
     static var currentLocationCoordinates: CLLocationCoordinate2D?
     
     //Creates location manager object
@@ -33,6 +29,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //Once the iPhone has loaded
     override func viewDidLoad() {
         super.viewDidLoad() //this always comes first
+        //force light mode if the user's phone is on dark mode
+        overrideUserInterfaceStyle = .light
         
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
@@ -57,6 +55,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let blurEffectView = UIVisualEffectView()
         blurEffectView.frame = CGRect(x:0, y:0, width: cityBackground.frame.width, height: cityBackground.frame.height)
         blurEffectView.center = cityBackground.center
+        blurEffectView.alpha = 0.7
         self.cityBackground.addSubview(blurEffectView)
         blurEffectView.effect = blurEffect
         
@@ -93,39 +92,12 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let weatherManager = WeatherManager()
         weatherManager.getCurrentTemperature(coords: locValue) { currentTemperature in
-            self.weatherLabel.text = "Weather: \(currentTemperature)"
+            self.weatherLabel.text = "\(round(currentTemperature))°F"
         }
         
         let placeManager = PlacesManager()
         placeManager.getNearbyPlaces(coordinate: locValue)
     }
-    
-//    func callPlacesAPI(coordinateVar: CLLocationCoordinate2D) -> Void {
-//        //API Caller Places API Documentation as Places List By Radius
-//        let headers = [
-//            "X-RapidAPI-Host": "opentripmap-places-v1.p.rapidapi.com",
-//            "X-RapidAPI-Key": "d21d23c616msh0dfcc69840c5774p1c3012jsne9d41c7837b3"
-//        ]
-//
-//        let radiusValue = 500
-//
-//        let request = NSMutableURLRequest(url: NSURL(string: "https://opentripmap-places-v1.p.rapidapi.com/%7Blang%7D/places/radius?radius=\(radiusValue)&lon=\(coordinateVar.longitude)&lat=\(coordinateVar.latitude)")! as URL,cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
-//        request.httpMethod = "GET"
-//        request.allHTTPHeaderFields = headers
-//
-//        let session = URLSession.shared
-//        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-//            if (error != nil) {
-//                print(error)
-//            } else {
-//                let httpResponse = response as? HTTPURLResponse
-//                print(httpResponse)
-//            }
-//        })
-//
-//        dataTask.resume()
-//        //; End of API call
-//    }
     
     //Returns the number of table cells to show (this changes dynamically for each attraction, when we implement it)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -136,17 +108,16 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DashCell") as! DashCell
         
-        cell.textLabel?.text = "row: \(indexPath.row)"
-        
-        /*
+        cell.activityLabel.text = "BLAH"
+
          //Defining API dictionaries to outlets
-         let activity = ____.["inputAPIactivityNameDictionary"] as! String
-         let desc = ___["inputAPIdescriptionDictionary"] as! String
-         
-         //Accessing outlets
-         cell.activityLabel = activity
-         cell.descLabel = desc
-         */
+//         let activity = ____.["inputAPIactivityNameDictionary"] as! String
+//         let desc = ___["inputAPIdescriptionDictionary"] as! String
+//
+//         //Accessing outlets
+//         cell.activityLabel = activity
+//         cell.descLabel = desc
+
         return cell
     }
 }

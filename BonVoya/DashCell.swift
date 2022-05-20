@@ -6,8 +6,6 @@
 import UIKit
 
 class DashCell: UITableViewCell {
-
-    
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var activityView: UIImageView!

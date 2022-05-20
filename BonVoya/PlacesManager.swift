@@ -36,30 +36,31 @@ class PlacesManager {
         
         
         // this is going to be a real request, this might put all the returned data in a data structure perhaps?
-        //        AF.request(placesURLConvertible).responseData { response in
-        //            switch response.result {
-        //            case .failure(let error):
-        //                print(error.localizedDescription)
-        //            case .success(let data):
-        //                do {
-        //                    let placesDataResponseBody = try JSONDecoder().decode(PlacesResponseBody.self, from: data)
-        //                    let result = placesDataResponseBody.results[0].id
-        //
-        //
-        //                    print(result)
-        //                } catch let error {
-        //                    print(error.localizedDescription)
-        //                }
-        //            }
-        //        }
+//        AF.request(placesURLConvertible, headers: headers).responseData { response in
+//            switch response.result {
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            case .success(let data):
+//                do {
+//                    let placesDataResponseBody = try JSONDecoder().decode(PlacesResponseBody.self, from: data)
+//                    let result = placesDataResponseBody.results[0].id
+//
+//
+//
+//                    print(result)
+//                } catch let error {
+//                    print(error.localizedDescription)
+//                }
+//            }
+//        }
         
         //for debugging purposes, just to get an overview of the response being returned from the api
-        AF.request(placesURLConvertible, headers: headers).responseData { response in
-            debugPrint(response)
-        }
+                AF.request(placesURLConvertible, headers: headers).responseData { response in
+                    debugPrint(response)
+                }
     }
 }
-    
+
 struct PlacesResponseBody: Decodable {
     let results: [Result]
 }
