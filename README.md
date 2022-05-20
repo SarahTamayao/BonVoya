@@ -26,6 +26,16 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 ![BonVoya Login](https://user-images.githubusercontent.com/30938391/164984766-fbc068ca-90a4-4651-b034-8ea0f60e445b.gif)
 
+### Demonstration of new login UI
+
+![BonVoya Login](https://user-images.githubusercontent.com/30938391/165883054-ca5335e1-c079-43f7-b198-5eb401c1306a.gif)
+
+### Demonstration of Dashboard 
+![BonVoya Login](http://g.recordit.co/cXZysBNvQW.gif)
+
+### New Dashboard and Weather
+![dashboardgif](https://user-images.githubusercontent.com/30938391/168456261-5fbd6525-fb1b-485c-bfdc-c7f9e6a88e07.gif)
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
@@ -34,19 +44,21 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 - [x] Application will connect to and utilize a Parse backend
 - [x] User can register and login
+- [x] Dashboard will be split into a top view and a bottom view
 - [ ] User can specify their desired location(s) of travel
-- [ ] A dashboard will display desired locations and current weather condition & temperature for each location
-- [ ] User will be able to access a general news page that includes news for all of their locations
-- [ ] When tapping on a location, user will be able to see a description, popular activities
+- [x] Dashboard will display current location and current weather condition & temperature for each location
+- [ ] Dashboard will be able to switch between saved locations and current location
+- [ ] When tapping on a location, user will be able to see a description and popular activities
 - [ ] User will be able to create an itinerary
 - [ ] User will be able to visit their profile and see their itineraries
-- [ ] User can access a help bar item that helps them navigate through the app
 
 **Optional Nice-to-have Stories**
 
+- [ ] User will be able to access a general news page that includes news for all of their locations
 - [ ] Dashboard will include a “spot of the day” for any of the locations they’ve specified
 - [ ] User can log their travel items & packed luggage
 - [ ] User will be able to see news for a specific location
+- [ ] User can access a help bar item that helps them navigate through the app
 
 ### 2. Screen Archetypes
 - [Login/Register]
