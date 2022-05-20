@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vTk-U2-ncr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vTk-U2-ncr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -325,7 +325,7 @@
                             <constraint firstItem="gpo-u4-gKK" firstAttribute="leading" secondItem="sQb-ag-GEJ" secondAttribute="trailing" constant="5" id="zlP-Pl-diL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="n0t-JQ-qFx"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="healthicons_ui-user-profile" selectedImage="healthicons_ui-user-profile" id="n0t-JQ-qFx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bioBackground" destination="vkA-Js-jLg" id="10G-8d-3TU"/>
@@ -341,7 +341,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hxZ-UZ-tUE">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="Frn-oI-SMP" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" interfaceStyle="light" id="Frn-oI-SMP" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VMD-89-Ke7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -360,7 +360,7 @@
         <scene sceneID="ads-QP-vu0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="uRd-ol-PqD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="ehe-cg-ZhB"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="ant-design_home-filled" selectedImage="ant-design_home-filled" id="ehe-cg-ZhB"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1Ah-7T-2ma"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EET-Fk-xEX">
@@ -383,6 +383,8 @@
         <image name="Line 3" width="428" height="3"/>
         <image name="Line 4" width="92" height="3"/>
         <image name="Thermostat" width="500" height="500"/>
+        <image name="ant-design_home-filled" width="42" height="42"/>
+        <image name="healthicons_ui-user-profile" width="48" height="48"/>
         <image name="loginRectangle" width="428" height="769"/>
         <image name="loginVector" width="428" height="529"/>
         <image name="man-holding-traveling-map" width="2674" height="1748"/>
