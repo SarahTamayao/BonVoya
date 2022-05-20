@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vTk-U2-ncr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vTk-U2-ncr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -325,7 +325,9 @@
                             <constraint firstItem="gpo-u4-gKK" firstAttribute="leading" secondItem="sQb-ag-GEJ" secondAttribute="trailing" constant="5" id="zlP-Pl-diL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="n0t-JQ-qFx"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person" id="n0t-JQ-qFx">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bioBackground" destination="vkA-Js-jLg" id="10G-8d-3TU"/>
@@ -342,10 +344,11 @@
         <scene sceneID="hxZ-UZ-tUE">
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="Frn-oI-SMP" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VMD-89-Ke7">
+                    <tabBar key="tabBar" opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VMD-89-Ke7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="uRd-ol-PqD" kind="relationship" relationship="viewControllers" id="Ce6-1L-0le"/>
@@ -360,7 +363,9 @@
         <scene sceneID="ads-QP-vu0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="uRd-ol-PqD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="ehe-cg-ZhB"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="house" catalog="system" selectedImage="house" id="ehe-cg-ZhB">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1Ah-7T-2ma"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EET-Fk-xEX">
@@ -383,10 +388,12 @@
         <image name="Line 3" width="428" height="3"/>
         <image name="Line 4" width="92" height="3"/>
         <image name="Thermostat" width="500" height="500"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="loginRectangle" width="428" height="769"/>
         <image name="loginVector" width="428" height="529"/>
         <image name="man-holding-traveling-map" width="2674" height="1748"/>
         <image name="paris" width="428" height="239"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="summer-camp-children-vacation-traveling-and-family-camping-activity-poster-and-flyer" width="2966" height="3731"/>
         <namedColor name="AccentColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -396,6 +403,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
