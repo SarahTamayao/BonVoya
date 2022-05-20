@@ -15,7 +15,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
-        
+    @IBOutlet weak var cityBackground: UIImageView!
+    
     static var currentLocationCoordinates: CLLocationCoordinate2D?
     
     //Creates location manager object
@@ -45,6 +46,14 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //Hide the navigation bar since, on the dashboard, we're not going to have a navbar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        //Specify properies for cityBackground
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurEffectView = UIVisualEffectView()
+        blurEffectView.frame = CGRect(x:0, y:0, width: cityBackground.frame.width, height: cityBackground.frame.height)
+        blurEffectView.center = cityBackground.center
+        self.cityBackground.addSubview(blurEffectView)
+        blurEffectView.effect = blurEffect
         
         //Specify properies for cityViewBorder
         cityViewBorder.clipsToBounds = false

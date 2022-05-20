@@ -2,8 +2,6 @@
 //  WeatherManager.swift
 //  BonVoya
 //
-//  Created by Tony Makaj on 5/18/22.
-//
 
 import Foundation
 import CoreLocation
