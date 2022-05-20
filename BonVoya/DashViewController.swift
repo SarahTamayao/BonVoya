@@ -17,6 +17,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var cityViewBorder: UIImageView!
     @IBOutlet weak var cityBackground: UIImageView!
+    @IBOutlet weak var NotesView: UIImageView!
+    
     
     @IBOutlet weak var writenotes: UITextView!
     //Temporary way to access user profile page
@@ -35,7 +37,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //force light mode if the user's phone is on dark mode
         overrideUserInterfaceStyle = .light
         notes.isUserInteractionEnabled = false
-        writenotes.isUserInteractionEnabled = true
+
         //Ask iPhone for permission to use location services
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -71,6 +73,8 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cityViewBorder.layer.shadowRadius = 5
         cityViewBorder.layer.shadowPath = UIBezierPath(roundedRect: cityViewBorder.bounds, cornerRadius: 10).cgPath
         cityViewBorder.layer.cornerRadius = 15
+        NotesView.layer.masksToBounds = true
+        NotesView.layer.cornerRadius = 20
     }
     
     //locationManager will retrieve the coordinates of the iPhone and change the text label
@@ -102,6 +106,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let placeManager = PlacesManager()
         placeManager.getNearbyPlaces(coordinate: locValue) { result in
             DashViewController.resultData = result
+            self.tableView.reloadData()
         }
     }
     
@@ -120,7 +125,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let website: String = DashViewController.resultData?[indexPath.row].website ?? "N/A"
         let distance = DashViewController.resultData?[indexPath.row].distance
         
-        let description: String = "Address: \(address)\nPhone #: \(phoneNumber)\nWebsite: \(website)\n\(distance ?? 0)m from you!"
+        let description: String = "Address: \(address)\nPhone #: \(phoneNumber)\nWebsite: \(website)\n\(distance ?? -1)m from you!"
         
         cell.activityLabel.text = activity
         cell.descLabel.text = description
