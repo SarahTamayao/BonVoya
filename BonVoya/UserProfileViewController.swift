@@ -27,6 +27,6 @@ class UserProfileViewController: UIViewController {
 
         bioBackground.layer.masksToBounds = true
         profileName.layer.cornerRadius = 10
-        profileName.text = LoginViewController.username
+        profileName.text = "Hello \(LoginViewController.username)"
     }
 }

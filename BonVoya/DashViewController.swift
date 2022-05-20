@@ -19,6 +19,7 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
         //Temporary way to access user profile page
     static var currentLocationCoordinates: CLLocationCoordinate2D?
+    static var resultData: [Result]?
     
     //Creates location manager object
     var locationManager = CLLocationManager()
@@ -96,7 +97,9 @@ class DashViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         let placeManager = PlacesManager()
-        placeManager.getNearbyPlaces(coordinate: locValue)
+        placeManager.getNearbyPlaces(coordinate: locValue) { result in
+            DashViewController.resultData = result
+        }
     }
     
     //Returns the number of table cells to show (this changes dynamically for each attraction, when we implement it)
