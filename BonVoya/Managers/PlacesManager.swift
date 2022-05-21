@@ -22,10 +22,21 @@ class PlacesManager {
     }
     
     func getNearbyPlaces(coordinate: CLLocationCoordinate2D, completion: @escaping ([Result]) -> ()) {
+        //Retrieve API keys from Keys.plist - ensure that placesAPIKey utilizes an API key from TruwayPlaces API (from RapidAPI)
+        var key: NSDictionary?
+        var placesAPIKey: String = ""
+        
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+            key = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let dict = key {
+            placesAPIKey = dict["placesAPIKey"] as! String
+        }
         
         let headers: HTTPHeaders = [
             "X-RapidAPI-Host": "trueway-places.p.rapidapi.com",
-            "X-RapidAPI-Key": "d21d23c616msh0dfcc69840c5774p1c3012jsne9d41c7837b3"
+            "X-RapidAPI-Key": placesAPIKey
         ]
         
         let radius: String = "10000" //i believe this is in meters?

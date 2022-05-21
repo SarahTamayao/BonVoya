@@ -28,6 +28,7 @@
 		A19A930F280FC0EB007822ED /* BonVoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A930E280FC0EB007822ED /* BonVoyaUITests.swift */; };
 		A19A9311280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */; };
 		A1C1D6C52836CC3100770A62 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1D6C42836CC3100770A62 /* ImageManager.swift */; };
+		A1CF45F32838683F00D77DD5 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1CF45F22838683F00D77DD5 /* Keys.plist */; };
 		C1B85BFF63416CCF08542CB1 /* Pods_BonVoya_BonVoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0B88938417075381C0EE38 /* Pods_BonVoya_BonVoyaUITests.framework */; };
 		CC5B74D828382927005D2D81 /* ItineraryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */; };
 		CC5B74D928382927005D2D81 /* ItineraryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5B74D728382927005D2D81 /* ItineraryViewCell.xib */; };
@@ -81,6 +82,7 @@
 		A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonVoyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1AC95522810DE3000E1270B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A1C1D6C42836CC3100770A62 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A1CF45F22838683F00D77DD5 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		B1E16885653B267EA1C2C98A /* Pods-BonVoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoya.debug.xcconfig"; path = "Target Support Files/Pods-BonVoya/Pods-BonVoya.debug.xcconfig"; sourceTree = "<group>"; };
 		C979C36C94CF2D3552A68F75 /* Pods-BonVoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonVoyaTests.debug.xcconfig"; path = "Target Support Files/Pods-BonVoyaTests/Pods-BonVoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryViewCell.swift; sourceTree = "<group>"; };
@@ -165,25 +167,18 @@
 		A19A92EC280FC0E8007822ED /* BonVoya */ = {
 			isa = PBXGroup;
 			children = (
+				A1CF45F42838686C00D77DD5 /* View Controllers */,
+				A1CF45F62838689000D77DD5 /* Managers */,
+				A1CF45F52838688600D77DD5 /* Cells */,
 				A19A92ED280FC0E8007822ED /* AppDelegate.swift */,
 				A19A92EF280FC0E8007822ED /* SceneDelegate.swift */,
-				319FF439281B6B8C00682A56 /* WelcomeViewController.swift */,
-				A1056C2B2814D7AF0015F973 /* LoginViewController.swift */,
-				319FF43F2835E5EE00682A56 /* UserProfileViewController.swift */,
-				343AA7692837563D0081BABD /* ItineraryViewController.swift */,
-				A159D70E281FA1B9005518CC /* DashViewController.swift */,
-				4E55970C282654B5008C1184 /* DashCell.swift */,
-				CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */,
-				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
-				A12E05692835B0CB0047F9FF /* WeatherManager.swift */,
-				4E77A22C2835D9EF00015A75 /* PlacesManager.swift */,
-				A1C1D6C42836CC3100770A62 /* ImageManager.swift */,
 				A19A92F3280FC0E8007822ED /* Main.storyboard */,
 				31D17AF028374C0900F41CED /* ItineraryCell.xib */,
 				CC5B74D728382927005D2D81 /* ItineraryViewCell.xib */,
 				A19A92F8280FC0EB007822ED /* LaunchScreen.storyboard */,
 				A19A92F6280FC0EB007822ED /* Assets.xcassets */,
 				A19A92FB280FC0EB007822ED /* Info.plist */,
+				A1CF45F22838683F00D77DD5 /* Keys.plist */,
 			);
 			path = BonVoya;
 			sourceTree = "<group>";
@@ -203,6 +198,38 @@
 				A19A9310280FC0EB007822ED /* BonVoyaUITestsLaunchTests.swift */,
 			);
 			path = BonVoyaUITests;
+			sourceTree = "<group>";
+		};
+		A1CF45F42838686C00D77DD5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				319FF439281B6B8C00682A56 /* WelcomeViewController.swift */,
+				A1056C2B2814D7AF0015F973 /* LoginViewController.swift */,
+				319FF43F2835E5EE00682A56 /* UserProfileViewController.swift */,
+				343AA7692837563D0081BABD /* ItineraryViewController.swift */,
+				A159D70E281FA1B9005518CC /* DashViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A1CF45F52838688600D77DD5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E55970C282654B5008C1184 /* DashCell.swift */,
+				CC5B74D628382927005D2D81 /* ItineraryViewCell.swift */,
+				31D17AEF28374C0900F41CED /* ItineraryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A1CF45F62838689000D77DD5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A12E05692835B0CB0047F9FF /* WeatherManager.swift */,
+				4E77A22C2835D9EF00015A75 /* PlacesManager.swift */,
+				A1C1D6C42836CC3100770A62 /* ImageManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CF45F32838683F00D77DD5 /* Keys.plist in Resources */,
 				A19A92FA280FC0EB007822ED /* LaunchScreen.storyboard in Resources */,
 				31D17AF228374C0900F41CED /* ItineraryCell.xib in Resources */,
 				A19A92F7280FC0EB007822ED /* Assets.xcassets in Resources */,

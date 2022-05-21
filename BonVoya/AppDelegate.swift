@@ -3,6 +3,7 @@
 //  BonVoya
 //
 
+import Foundation
 import UIKit
 import Parse
 
@@ -11,10 +12,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //Retrieve API keys from Keys.plist - ensure that they all contain keys!
+        var keys: NSDictionary?
+        var parseApplicationId, parseClientKey: String?
+        
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let dict = keys {
+            parseApplicationId = dict["parseApplicationId"] as? String
+            parseClientKey = dict["parseClientKey"] as? String
+        }
+        
         // Connection with Parse backend
         let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "2rBOrgQ2ZfwZREAqESdNUxz3oamouvMs3X0gjisf"
-            $0.clientKey = "6N06CF4a4JciZbA7GXk9qQJzgnKIwvaGJpMDmbGa"
+            $0.applicationId = parseApplicationId
+            $0.clientKey = parseClientKey
             $0.server = "https://parseapi.back4app.com"
         }
         Parse.initialize(with: parseConfig)

@@ -10,9 +10,20 @@ import AlamofireImage
 
 class WeatherManager {
     func getCurrentTemperature(coords: CLLocationCoordinate2D, completion: @escaping (Double) -> ()) {
+        //Retrieve API keys from Keys.plist - ensure that weatherAPIKey utilizes an api key from openweathermap API
+        var key: NSDictionary?
+        var weatherAPIKey: String = ""
+        
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+            key = NSDictionary(contentsOfFile: path)
+        }
+        
+        if let dict = key {
+            weatherAPIKey = dict["weatherAPIKey"] as! String
+        }
         
         //Weather function
-        let apiKey: String = "4cdc43b784690435fdb782327f18f41f"
+        let apiKey: String = weatherAPIKey
         let unit: String = "imperial" //supports standard, metric, and imperial
         
         let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(coords.latitude)&lon=\(coords.longitude)&appid=\(apiKey)&units=\(unit)")!

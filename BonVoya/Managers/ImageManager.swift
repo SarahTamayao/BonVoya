@@ -10,7 +10,19 @@
 //
 //class ImageManager {
 //    func getImage(searchQuery: String) -> String {
-//        let accessKey = "AI7KHFOa-7KZ425NuOwGujYfoHUHBDJPX6OdpNNKxw4"
+//        //Retrieve API keys from Keys.plist - ensure that imageAPIKey utilizes an api key from unsplash API
+//        var key: NSDictionary?
+//        var imageAPIKey: String = ""
+//
+//        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+//            key = NSDictionary(contentsOfFile: path)
+//        }
+//
+//        if let dict = key {
+//            imageAPIKey = dict["imageAPIKey"] as! String
+//        }
+//
+//        let accessKey = imageAPIKey
 //
 //        let unsplashURL = "https://api.unsplash.com/photos/random/?client_id=\(accessKey)&query=\(searchQuery)"
 //        let unsplashURLConvertible: Alamofire.URLConvertible = unsplashURL
