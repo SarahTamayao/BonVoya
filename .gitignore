@@ -1,10 +1,7 @@
 ## User settings
-xcuserdata/
+xcworkspace/xcuserdata/
 *.xcuserstate
 .DS_Store
-
-## API Keys
-Keys.plist
 
 ## Obj-C/Swift specific
 *.hmap
