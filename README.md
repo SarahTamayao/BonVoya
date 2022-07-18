@@ -28,24 +28,14 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**Stories**
 
 - [x] Application will connect to and utilize a Parse backend
 - [x] User can register and login
 - [x] Dashboard will be split into a top view and a bottom view
-- [ ] User can specify their desired location(s) of travel
 - [x] Dashboard will display current location and current weather condition & temperature for each location
-- [ ] Dashboard will be able to switch between saved locations and current location
 - [x] When tapping on a location, user will be able to see a description and popular activities
-- [ ] User will be able to create an itinerary
 - [x] User will be able to visit their profile and see their itineraries
-
-**Optional Nice-to-have Stories**
-
-- [ ] User will be able to access a general news page that includes news for all of their locations
-- [ ] Dashboard will include a “spot of the day” for any of the locations they’ve specified
-- [ ] User can log their travel items & packed luggage
-- [ ] User can access a help bar item that helps them navigate through the app
 
 ### 2. Screen Archetypes
 - [Login/Register]
