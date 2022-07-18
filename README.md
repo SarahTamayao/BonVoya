@@ -26,7 +26,7 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
+### 1. User Stories
 
 **Stories**
 
