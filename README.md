@@ -26,16 +26,17 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 ## Product Spec
 
-### 1. User Stories
+### 1. User Stories (Required and Optional)
 
-**Stories**
+**Required Must-have Stories**
 
-- [ ] Application will connect to and utilize a Parse backend
-- [ ] User can register and login
-- [ ] Dashboard will be split into a top view and a bottom view
-- [ ] Dashboard will display current location and current weather condition & temperature for each location
-- [ ] When tapping on a location, user will be able to see a description and popular activities
-- [ ] User will be able to visit their profile and see their itineraries
+* [fill in your required user stories here]
+* …
+
+**Optional Nice-to-have Stories**
+
+* [fill in your required user stories here]
+* …
 
 ### 2. Screen Archetypes
 * [list first screen here]
