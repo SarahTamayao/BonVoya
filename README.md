@@ -30,40 +30,37 @@ This is an iOS application developed for iPhone that provides popular spots, act
 
 **Stories**
 
-- [x] Application will connect to and utilize a Parse backend
-- [x] User can register and login
-- [x] Dashboard will be split into a top view and a bottom view
-- [x] Dashboard will display current location and current weather condition & temperature for each location
-- [x] When tapping on a location, user will be able to see a description and popular activities
-- [x] User will be able to visit their profile and see their itineraries
+- [ ] Application will connect to and utilize a Parse backend
+- [ ] User can register and login
+- [ ] Dashboard will be split into a top view and a bottom view
+- [ ] Dashboard will display current location and current weather condition & temperature for each location
+- [ ] When tapping on a location, user will be able to see a description and popular activities
+- [ ] User will be able to visit their profile and see their itineraries
 
 ### 2. Screen Archetypes
-- [Login/Register]
-    - [Login/Register will launch initially.]
-- [Profile]
-    - [User can access their saved plans and access settings.]
-- [Creation]
-   - [User can create a new trip from (+) bar.]
-- [Settings]
-    - [User can specify accessibility needs within the Profile tab.]
+* [list first screen here]
+   * [list associated required story here]
+   * …
+* [list second screen here]
+   * [list associated required story here]
+   * …
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-- [Profile]
-- [(+)]
-- [Dashboard]
+* [fill out your first tab]
+* [fill out your second tab]
+* [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
 
-- [Profile]
-    - [Settings]
-    - [Plan#]
-- [(+)]
-    - [Filter -> TicketFinder]
-- [Dashboard]
-    - [Attractions]
+* [list first screen here]
+   * [list screen navigation here]
+   * …
+* [list second screen here]
+   * [list screen navigation here]
+   * …
 
 ## Wireframes
 ![Wireframe](https://user-images.githubusercontent.com/30938391/164106632-ca0ab42e-84e3-4cdc-a741-b10cb64044d4.jpeg)
